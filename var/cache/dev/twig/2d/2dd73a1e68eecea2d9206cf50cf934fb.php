@@ -325,7 +325,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
         // line 75
-        yield "            <p>Pied de page</p>
+        yield "            <p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
             ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -436,7 +436,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
 
         <footer class=\"footer\">
             {% block footer %}
-            <p>Pied de page</p>
+            <p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
             {% endblock %}
         </footer>
     </body>
