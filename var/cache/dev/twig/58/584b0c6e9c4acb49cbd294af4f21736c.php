@@ -73,7 +73,7 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        yield "Test Portfolio";
+        yield "Page Type";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -98,19 +98,38 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
 
         // line 6
         yield "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .sidebar { width: 20%; padding: 1em; background-color: #f8f9fa; }
+    .content { width: 80%; padding: 1em; margin-left: 20%; overflow-y: auto; }
+    .footer { text-align: center; padding: 1em; background-color: #f8f9fa; position: absolute; bottom: 0; width: 100%; }
+    header { text-align: center; width: 100%; }
 </style>
 
-<div class=\"example-wrapper\">
-    <h1>Test Portfolio :</h1>
+<header>
+    <h1>Titre de la page</h1>
+</header>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/Symfony/SAE_1.04/SAE_104/src/Controller/AccueilController.php</code></li>
-        <li>Your template at <code>C:/Symfony/SAE_1.04/SAE_104/templates/accueil/index.html.twig</code></li>
-    </ul>
-</div>
+
+<div class=\"content\">
+    <section id=\"section1\">
+        <h2>Titre 1</h2>
+        <p>Paragraphe pour le titre 1.</p>
+    </section>
+
+    <section id=\"section2\">
+        <h2>Titre 2</h2>
+        <p>Paragraphe pour le titre 2.</p>
+    </section>
+    
+    <section id=\"section3\">
+        <h2>Titre 3</h2>
+        <p>Paragraphe pour le titre 3.</p>
+    </section>
+</div>    
+
+
+<footer class=\"footer\">
+    <p>Pied de page</p>
+</footer>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -149,23 +168,42 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Test Portfolio{% endblock %}
+{% block title %}Page Type{% endblock %}
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .sidebar { width: 20%; padding: 1em; background-color: #f8f9fa; }
+    .content { width: 80%; padding: 1em; margin-left: 20%; overflow-y: auto; }
+    .footer { text-align: center; padding: 1em; background-color: #f8f9fa; position: absolute; bottom: 0; width: 100%; }
+    header { text-align: center; width: 100%; }
 </style>
 
-<div class=\"example-wrapper\">
-    <h1>Test Portfolio :</h1>
+<header>
+    <h1>Titre de la page</h1>
+</header>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/Symfony/SAE_1.04/SAE_104/src/Controller/AccueilController.php</code></li>
-        <li>Your template at <code>C:/Symfony/SAE_1.04/SAE_104/templates/accueil/index.html.twig</code></li>
-    </ul>
-</div>
+
+<div class=\"content\">
+    <section id=\"section1\">
+        <h2>Titre 1</h2>
+        <p>Paragraphe pour le titre 1.</p>
+    </section>
+
+    <section id=\"section2\">
+        <h2>Titre 2</h2>
+        <p>Paragraphe pour le titre 2.</p>
+    </section>
+    
+    <section id=\"section3\">
+        <h2>Titre 3</h2>
+        <p>Paragraphe pour le titre 3.</p>
+    </section>
+</div>    
+
+
+<footer class=\"footer\">
+    <p>Pied de page</p>
+</footer>
 {% endblock %}", "accueil/test.html.twig", "C:\\Symfony\\SAE_1.04\\SAE_104\\templates\\accueil\\test.html.twig");
     }
 }

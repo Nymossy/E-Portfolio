@@ -103,7 +103,7 @@ class __TwigTemplate_46ec5634e2ff0fded2b204bae9c8d252 extends Template
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>Curriculum Vitae</h1>
+    <h1>Curriculum Vitae :</h1>
 </div>
 ";
         
@@ -152,7 +152,7 @@ class __TwigTemplate_46ec5634e2ff0fded2b204bae9c8d252 extends Template
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>Curriculum Vitae</h1>
+    <h1>Curriculum Vitae :</h1>
 </div>
 {% endblock %}", "accueil/cv.html.twig", "C:\\Symfony\\SAE_1.04\\SAE_104\\templates\\accueil\\cv.html.twig");
     }

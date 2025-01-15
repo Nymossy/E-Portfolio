@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-        <link rel="stylesheet" href="https://bootswatch.com/5/slate/bootstrap.min.css">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        <link rel="stylesheet" href="https://bootswatch.com/5/minty/bootstrap.min.css">
         {% block stylesheets %}
         {% endblock %}
 
@@ -13,6 +13,67 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Acia Chouchane</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_accueil') }}">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_about') }}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_cv') }}">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_portfolio_1') }}">Portfolio 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_portfolio_2') }}">Portfolio 2</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <style>
+            .content { padding: 1em; }
+            .footer { text-align: center; padding: 1em; background-color: #f8f9fa; position: absolute; bottom: 0; width: 100%; }
+            header { text-align: center; width: 100%; }
+        </style>
+
+        <header>
+            <h1>{% block page_title %}Titre de la page{% endblock %}</h1>
+        </header>
+
+        <div class="content">
+            {% block content %}
+            <section id="section1">
+                <h2>Titre 1</h2>
+                <p>Paragraphe pour le titre 1.</p>
+            </section>
+
+            <section id="section2">
+                <h2>Titre 2</h2>
+                <p>Paragraphe pour le titre 2.</p>
+            </section>
+            
+            <section id="section3">
+                <h2>Titre 3</h2>
+                <p>Paragraphe pour le titre 3.</p>
+            </section>
+            {% endblock %}
+        </div>
+
+        <footer class="footer">
+            {% block footer %}
+            <p>Pied de page</p>
+            {% endblock %}
+        </footer>
     </body>
 </html>

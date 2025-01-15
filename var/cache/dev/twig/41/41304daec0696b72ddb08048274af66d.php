@@ -31,7 +31,8 @@ class __TwigTemplate_3dd7064fb88399899148c4cdcdd92a4e extends Template
 
         $this->blocks = [
             'title' => [$this, 'block_title'],
-            'body' => [$this, 'block_body'],
+            'page_title' => [$this, 'block_page_title'],
+            'content' => [$this, 'block_content'],
         ];
     }
 
@@ -73,7 +74,7 @@ class __TwigTemplate_3dd7064fb88399899148c4cdcdd92a4e extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        yield "Accueil Portfolio";
+        yield "Accueil";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -87,24 +88,53 @@ class __TwigTemplate_3dd7064fb88399899148c4cdcdd92a4e extends Template
     /**
      * @return iterable<null|scalar|\Stringable>
      */
-    public function block_body(array $context, array $blocks = []): iterable
+    public function block_page_title(array $context, array $blocks = []): iterable
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
-        // line 6
-        yield "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+        yield "Accueil Portfolio";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
-<div class=\"example-wrapper\">
-    <h1>Accueil Portfolio :</h1>
-</div>
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        yield from [];
+    }
+
+    // line 7
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_content(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
+
+        // line 8
+        yield "<section id=\"section1\">
+    <h2>Bienvenue</h2>
+    <p>Bienvenue sur notre site web. Voici la section d'accueil.</p>
+</section>
+
+<section id=\"section2\">
+    <h2>Nos Services</h2>
+    <p>Découvrez nos services exceptionnels.</p>
+</section>
+
+<section id=\"section3\">
+    <h2>Contact</h2>
+    <p>Contactez-nous pour plus d'informations.</p>
+</section>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -136,25 +166,32 @@ class __TwigTemplate_3dd7064fb88399899148c4cdcdd92a4e extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  124 => 8,  111 => 7,  88 => 5,  65 => 3,  42 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Accueil Portfolio{% endblock %}
+{% block title %}Accueil{% endblock %}
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{% block page_title %}Accueil Portfolio{% endblock %}
 
-<div class=\"example-wrapper\">
-    <h1>Accueil Portfolio :</h1>
-</div>
-{% endblock %}
-", "accueil/accueil.html.twig", "C:\\Symfony\\SAE_1.04\\SAE_104\\templates\\accueil\\accueil.html.twig");
+{% block content %}
+<section id=\"section1\">
+    <h2>Bienvenue</h2>
+    <p>Bienvenue sur notre site web. Voici la section d'accueil.</p>
+</section>
+
+<section id=\"section2\">
+    <h2>Nos Services</h2>
+    <p>Découvrez nos services exceptionnels.</p>
+</section>
+
+<section id=\"section3\">
+    <h2>Contact</h2>
+    <p>Contactez-nous pour plus d'informations.</p>
+</section>
+{% endblock %}", "accueil/accueil.html.twig", "C:\\Symfony\\SAE_1.04\\SAE_104\\templates\\accueil\\accueil.html.twig");
     }
 }

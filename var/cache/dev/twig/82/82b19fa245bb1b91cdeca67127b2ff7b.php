@@ -103,7 +103,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>A propos</h1>
+    <h1>A propos :</h1>
 </div>
 ";
         
@@ -152,7 +152,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>A propos</h1>
+    <h1>A propos :</h1>
 </div>
 {% endblock %}", "accueil/about.html.twig", "C:\\Symfony\\SAE_1.04\\SAE_104\\templates\\accueil\\about.html.twig");
     }
