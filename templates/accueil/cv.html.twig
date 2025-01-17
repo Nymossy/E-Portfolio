@@ -1,14 +1,63 @@
-{% extends 'base.html.twig' %}
+{% extends 'base_triple.html.twig' %}
 
-{% block title %}Curriculum Vitae{% endblock %}
+{% block title %}Curriculum Vitæ{% endblock %}
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{% block page_title %}Consultante cybersécurité en freelance{% endblock %}
 
-<div class="example-wrapper">
-    <h1>Curriculum Vitae :</h1>
-</div>
+{% block content %}
+    <section id="section1">
+        <h2>Formations</h2>
+        <p><b>Septembre 2024 - Juin 2025</b> <br>
+            IUT de Roanne, 42300 Roanne<br>
+            1<sup>ère</sup> année en BUT Réseau et Télécommunication<br>
+            <br>
+            <b>Juin 2024</b><br>
+            Lycée l'Oiselet, 38300 Bourgoin-Jallieu<br>
+            Baccalauréat Générale, mention assez bien<br>
+            Spécialité Mathématiques & NSI<br>
+            <br>
+            <b>Septembre 2022 - Juin 2024</b><br>
+            Lycée l'Oiselet, 38300 Bourgoin-Jallieu<br>
+            Première et Terminale Générale, option Maths, NSI et SI<br>
+            <br>
+            <b>Septembre 2019 - Juin 2021</b><br>
+            Seconde Générale et Technologique<br>
+            CNED - scolarité en 2 ans - Tunisie<br>
+            <br>
+            <b>Juin 2016</b><br>
+            Collège Pré-Bénit, 38300 Bourgoin-Jallieu<br>
+            Prévention et Secours Civiques de niveau 1 (PSC1)<br>
+        </p>
+    </section>
+
+    <section id="section2">
+        <h2>Expériences Professionnelles</h2>
+        <p>
+            <b>Juillet 2023 - Août 2023 | + Toussaint 2023  </b><br>
+            Serveuse<br>
+            Memphis Coffee - Bourgoin-Jallieu 38300<br>
+            <br>
+            <b>Juillet 2019 - Juillet 2022</b><br>
+            Membre actif<br>
+            Oliveraie Permaculture - Monastir, Tunisie<br>
+            <br>
+            <b>5-8 Février 2019</b><br>
+            Stage de 3<sup>ème</sup> : Palefrenière<br>
+            Jouault Équitation - Ruy 38300<br>
+        </p>
+    </section>
+
+    <section id="section3">
+        <h2>Compétences</h2>
+        <p>
+            <b>Programmation</b> en Python, C, HTML.
+        </p>
+    </section>
+{% endblock %}
+
+{% block footer %}
+    <p>
+        Acia Chouchane - Tous droits réservés<br>
+        CC BY-NC-ND
+    </p>
 {% endblock %}

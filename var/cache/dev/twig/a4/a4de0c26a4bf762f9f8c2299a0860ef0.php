@@ -31,14 +31,16 @@ class __TwigTemplate_46ec5634e2ff0fded2b204bae9c8d252 extends Template
 
         $this->blocks = [
             'title' => [$this, 'block_title'],
-            'body' => [$this, 'block_body'],
+            'page_title' => [$this, 'block_page_title'],
+            'content' => [$this, 'block_content'],
+            'footer' => [$this, 'block_footer'],
         ];
     }
 
     protected function doGetParent(array $context): bool|string|Template|TemplateWrapper
     {
         // line 1
-        return "base.html.twig";
+        return "base_triple.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = []): iterable
@@ -50,7 +52,7 @@ class __TwigTemplate_46ec5634e2ff0fded2b204bae9c8d252 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "accueil/cv.html.twig"));
 
-        $this->parent = $this->loadTemplate("base.html.twig", "accueil/cv.html.twig", 1);
+        $this->parent = $this->loadTemplate("base_triple.html.twig", "accueil/cv.html.twig", 1);
         yield from $this->parent->unwrap()->yield($context, array_merge($this->blocks, $blocks));
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -73,7 +75,7 @@ class __TwigTemplate_46ec5634e2ff0fded2b204bae9c8d252 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        yield "Curriculum Vitae";
+        yield "Curriculum Vitæ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -87,24 +89,115 @@ class __TwigTemplate_46ec5634e2ff0fded2b204bae9c8d252 extends Template
     /**
      * @return iterable<null|scalar|\Stringable>
      */
-    public function block_body(array $context, array $blocks = []): iterable
+    public function block_page_title(array $context, array $blocks = []): iterable
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
-        // line 6
-        yield "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+        yield "Consultante cybersécurité en freelance";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
-<div class=\"example-wrapper\">
-    <h1>Curriculum Vitae :</h1>
-</div>
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        yield from [];
+    }
+
+    // line 7
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_content(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
+
+        // line 8
+        yield "    <section id=\"section1\">
+        <h2>Formations</h2>
+        <p><b>Septembre 2024 - Juin 2025</b> <br>
+            IUT de Roanne, 42300 Roanne<br>
+            1<sup>ère</sup> année en BUT Réseau et Télécommunication<br>
+            <br>
+            <b>Juin 2024</b><br>
+            Lycée l'Oiselet, 38300 Bourgoin-Jallieu<br>
+            Baccalauréat Générale, mention assez bien<br>
+            Spécialité Mathématiques & NSI<br>
+            <br>
+            <b>Septembre 2022 - Juin 2024</b><br>
+            Lycée l'Oiselet, 38300 Bourgoin-Jallieu<br>
+            Première et Terminale Générale, option Maths, NSI et SI<br>
+            <br>
+            <b>Septembre 2019 - Juin 2021</b><br>
+            Seconde Générale et Technologique<br>
+            CNED - scolarité en 2 ans - Tunisie<br>
+            <br>
+            <b>Juin 2016</b><br>
+            Collège Pré-Bénit, 38300 Bourgoin-Jallieu<br>
+            Prévention et Secours Civiques de niveau 1 (PSC1)<br>
+        </p>
+    </section>
+
+    <section id=\"section2\">
+        <h2>Expériences Professionnelles</h2>
+        <p>
+            <b>Juillet 2023 - Août 2023 | + Toussaint 2023  </b><br>
+            Serveuse<br>
+            Memphis Coffee - Bourgoin-Jallieu 38300<br>
+            <br>
+            <b>Juillet 2019 - Juillet 2022</b><br>
+            Membre actif<br>
+            Oliveraie Permaculture - Monastir, Tunisie<br>
+            <br>
+            <b>5-8 Février 2019</b><br>
+            Stage de 3<sup>ème</sup> : Palefrenière<br>
+            Jouault Équitation - Ruy 38300<br>
+        </p>
+    </section>
+
+    <section id=\"section3\">
+        <h2>Compétences</h2>
+        <p>
+            <b>Programmation</b> en Python, C, HTML.
+        </p>
+    </section>
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        yield from [];
+    }
+
+    // line 58
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_footer(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
+
+        // line 59
+        yield "    <p>
+        Acia Chouchane - Tous droits réservés<br>
+        CC BY-NC-ND
+    </p>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -136,24 +229,73 @@ class __TwigTemplate_46ec5634e2ff0fded2b204bae9c8d252 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  197 => 59,  184 => 58,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
     }
 
     public function getSourceContext(): Source
     {
-        return new Source("{% extends 'base.html.twig' %}
+        return new Source("{% extends 'base_triple.html.twig' %}
 
-{% block title %}Curriculum Vitae{% endblock %}
+{% block title %}Curriculum Vitæ{% endblock %}
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{% block page_title %}Consultante cybersécurité en freelance{% endblock %}
 
-<div class=\"example-wrapper\">
-    <h1>Curriculum Vitae :</h1>
-</div>
+{% block content %}
+    <section id=\"section1\">
+        <h2>Formations</h2>
+        <p><b>Septembre 2024 - Juin 2025</b> <br>
+            IUT de Roanne, 42300 Roanne<br>
+            1<sup>ère</sup> année en BUT Réseau et Télécommunication<br>
+            <br>
+            <b>Juin 2024</b><br>
+            Lycée l'Oiselet, 38300 Bourgoin-Jallieu<br>
+            Baccalauréat Générale, mention assez bien<br>
+            Spécialité Mathématiques & NSI<br>
+            <br>
+            <b>Septembre 2022 - Juin 2024</b><br>
+            Lycée l'Oiselet, 38300 Bourgoin-Jallieu<br>
+            Première et Terminale Générale, option Maths, NSI et SI<br>
+            <br>
+            <b>Septembre 2019 - Juin 2021</b><br>
+            Seconde Générale et Technologique<br>
+            CNED - scolarité en 2 ans - Tunisie<br>
+            <br>
+            <b>Juin 2016</b><br>
+            Collège Pré-Bénit, 38300 Bourgoin-Jallieu<br>
+            Prévention et Secours Civiques de niveau 1 (PSC1)<br>
+        </p>
+    </section>
+
+    <section id=\"section2\">
+        <h2>Expériences Professionnelles</h2>
+        <p>
+            <b>Juillet 2023 - Août 2023 | + Toussaint 2023  </b><br>
+            Serveuse<br>
+            Memphis Coffee - Bourgoin-Jallieu 38300<br>
+            <br>
+            <b>Juillet 2019 - Juillet 2022</b><br>
+            Membre actif<br>
+            Oliveraie Permaculture - Monastir, Tunisie<br>
+            <br>
+            <b>5-8 Février 2019</b><br>
+            Stage de 3<sup>ème</sup> : Palefrenière<br>
+            Jouault Équitation - Ruy 38300<br>
+        </p>
+    </section>
+
+    <section id=\"section3\">
+        <h2>Compétences</h2>
+        <p>
+            <b>Programmation</b> en Python, C, HTML.
+        </p>
+    </section>
+{% endblock %}
+
+{% block footer %}
+    <p>
+        Acia Chouchane - Tous droits réservés<br>
+        CC BY-NC-ND
+    </p>
 {% endblock %}", "accueil/cv.html.twig", "C:\\Symfony\\SAE_1.04\\SAE_104\\templates\\accueil\\cv.html.twig");
     }
 }
