@@ -91,7 +91,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                             <a class=\"nav-link\" href=\"";
         // line 33
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_about");
-        yield "\">About</a>
+        yield "\">A propos</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
@@ -123,7 +123,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         </style>
 
         <header>
-            <h1>";
+            <h1 class=\"page-title\">";
         // line 56
         yield from $this->unwrap()->yieldBlock('page_title', $context, $blocks);
         yield "</h1>
@@ -133,14 +133,14 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
             ";
         // line 60
         yield from $this->unwrap()->yieldBlock('content', $context, $blocks);
-        // line 76
+        // line 81
         yield "        </div>
 
         <footer class=\"footer\">
             ";
-        // line 79
+        // line 84
         yield from $this->unwrap()->yieldBlock('footer', $context, $blocks);
-        // line 82
+        // line 87
         yield "        </footer>
     </body>
 </html>";
@@ -192,7 +192,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         // line 9
         yield "        <style>
             h1, h2, p, .content, .footer {text-align: center;}
-            h2 {color: rgb(71, 68, 68);}
+            h2 {color: black;}
             p {color: black;}
         </style>
         ";
@@ -296,7 +296,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                 <h2>Titre 1</h2>
                 <p>Paragraphe pour le titre 1.</p>
             </section>
-            
+
             <section id=\"section2\">
                 <h2>Titre 2</h2>
                 <p>Paragraphe pour le titre 2.</p>
@@ -305,6 +305,11 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
             <section id=\"section3\">
                 <h2>Titre 3</h2>
                 <p>Paragraphe pour le titre 3.</p>
+            </section>
+
+            <section id=\"section4\">
+                <h2>Titre 4</h2>
+                <p>Paragraphe pour le titre 4.</p>
             </section>
             ";
         
@@ -316,7 +321,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 79
+    // line 84
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -329,7 +334,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 80
+        // line 85
         yield "            <p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
             ";
         
@@ -362,7 +367,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  333 => 80,  320 => 79,  295 => 61,  282 => 60,  259 => 56,  236 => 17,  225 => 18,  222 => 17,  209 => 16,  193 => 9,  180 => 8,  157 => 5,  144 => 82,  142 => 79,  137 => 76,  135 => 60,  128 => 56,  111 => 42,  105 => 39,  99 => 36,  93 => 33,  87 => 30,  74 => 19,  72 => 16,  69 => 15,  67 => 8,  61 => 5,  55 => 1,);
+        return array (  338 => 85,  325 => 84,  295 => 61,  282 => 60,  259 => 56,  236 => 17,  225 => 18,  222 => 17,  209 => 16,  193 => 9,  180 => 8,  157 => 5,  144 => 87,  142 => 84,  137 => 81,  135 => 60,  128 => 56,  111 => 42,  105 => 39,  99 => 36,  93 => 33,  87 => 30,  74 => 19,  72 => 16,  69 => 15,  67 => 8,  61 => 5,  55 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -377,7 +382,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         {% block stylesheets %}
         <style>
             h1, h2, p, .content, .footer {text-align: center;}
-            h2 {color: rgb(71, 68, 68);}
+            h2 {color: black;}
             p {color: black;}
         </style>
         {% endblock %}
@@ -399,7 +404,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                             <a class=\"nav-link\" href=\"{{ path('app_accueil') }}\">Accueil</a>
                         </li>
                         <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"{{ path('app_about') }}\">About</a>
+                            <a class=\"nav-link\" href=\"{{ path('app_about') }}\">A propos</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"{{ path('app_cv') }}\">CV</a>
@@ -422,7 +427,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         </style>
 
         <header>
-            <h1>{% block page_title %}Titre de la page{% endblock %}</h1>
+            <h1 class=\"page-title\">{% block page_title %}Titre de la page{% endblock %}</h1>
         </header>
 
         <div class=\"content\">
@@ -431,7 +436,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                 <h2>Titre 1</h2>
                 <p>Paragraphe pour le titre 1.</p>
             </section>
-            
+
             <section id=\"section2\">
                 <h2>Titre 2</h2>
                 <p>Paragraphe pour le titre 2.</p>
@@ -440,6 +445,11 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
             <section id=\"section3\">
                 <h2>Titre 3</h2>
                 <p>Paragraphe pour le titre 3.</p>
+            </section>
+
+            <section id=\"section4\">
+                <h2>Titre 4</h2>
+                <p>Paragraphe pour le titre 4.</p>
             </section>
             {% endblock %}
         </div>

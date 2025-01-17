@@ -1,32 +1,27 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Page Type{% endblock %}
+{% block title %}Onglet{% endblock %}
 
-{% block body %}
-    <header>
-        <h1>Titre de la page</h1>
-    </header>
+{% block page_title %Titre page{% endblock %}
 
+{% block content %}
+<section id="section1">
+    <h2>Titre 1</h2>
+    <p>Paragraphe pour le titre 1.
+    </p>
+</section>
 
-    <div class="content">
-        <section id="section1">
-            <h2>Titre 1</h2>
-            <p>Paragraphe pour le titre 1.</p>
-        </section>
+<section id="section2">
+    <h2>Titre 2</h2>
+    <p>Paragraphe pour le titre 2.</p>
+</section>
 
-        <section id="section2">
-            <h2>Titre 2</h2>
-            <p>Paragraphe pour le titre 2.</p>
-        </section>
-        
-        <section id="section3">
-            <h2>Titre 3</h2>
-            <p>Paragraphe pour le titre 3.</p>
-        </section>
-    </div>    
+<section id="section3">
+    <h2>Titre 3</h2>
+    <p>Paragraphe pour le titre 3.</p>
+</section>
+{% endblock %}
 
-
-    <footer class="footer">
-        <p>Pied de page</p>
-    </footer>
+{% block footer %}
+<p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
 {% endblock %}

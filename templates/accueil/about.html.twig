@@ -2,35 +2,46 @@
 
 {% block title %}A propos{% endblock %}
 
-{% block body %}
-    <header>
-        <h1>Mes passions et loisirs :</h1>
-    </header>
+{% block page_title %}Mes passions et loisirs :{% endblock %}
 
+{% block content %}
+<!-- Projet tunisie -->
+<section id="section1">
+    <h2>Projet Familial</h2>
+    <p>De Août 2019 à Août 2022, j'ai vécu en Tunisie dans une maison construite en SuperAdobe.<br>
+        Nous avons créé une ferme pédagogique pour les enfants de la région.<br>
+        Nous avons accueilli des classes de primaire et de collège pour leur faire découvrir la nature et les animaux.<br>
+        Nous avons également organisé des stages de permaculture et de jardinage pour les adultes.<br>
+        Nous avons eu des chevaux, des chèvres, des poules, des lapins, des chiens et des chats.<br>
+        Nous avons également planté un verger et un potager.<br>
+        Nous avons organisé des événements pour les enfants et les adultes, comme des ateliers de cuisine, des ateliers de bricolage, des ateliers de jardinage, des at
+    </p>
+</section>
 
-    <div class="content">
-        <section id="section1">
-            <h2>Les animaux</h2>
-            <p>Je suis passionée depuis mon plus jeune âge par les animaux
-                et plus précisément par les chiens et les chevaux.
-                J'ai fais plusieurs années d'équitation et j'ai eu la chance
-                de posséder une jument pendant 3 ans quand j'ai déménagé en Tunisie.
-            </p>
-        </section>
+<section id="section2">
+    <h2>Les animaux</h2>
+    <p>Je suis passionnée depuis mon plus jeune âge par les animaux
+        et plus précisément par les chiens et les chevaux.<br>
+        J'ai fait plusieurs années d'équitation et j'ai eu la chance
+        de posséder une jument pendant 3 ans lorsque j'ai déménagé en Tunisie.<br>
+        Je me suis formée à l'équitation éthologique, qui est l'étude du comportement du cheval en liberté,<br>
+        et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.
+    </p>
+</section>
 
-        <section id="section2">
-            <h2>Titre 2</h2>
-            <p>Paragraphe pour le titre 2.</p>
-        </section>
-        
-        <section id="section3">
-            <h2>Titre 3</h2>
-            <p>Paragraphe pour le titre 3.</p>
-        </section>
-    </div>    
+<!-- Hackcess -->
+<section id="section3">
+    <h2>Titre 3</h2>
+    <p>Paragraphe pour le titre 3.</p>
+</section>
 
+<!-- Loisirs créatifs -->
+<section id="section4">
+    <h2>Titre 4</h2>
+    <p>Paragraphe pour le titre 4.</p>
+</section>
+{% endblock %}
 
-    <footer class="footer">
-        <p>Pied de page</p>
-    </footer>
+{% block footer %}
+<p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
 {% endblock %}

@@ -31,7 +31,9 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
 
         $this->blocks = [
             'title' => [$this, 'block_title'],
-            'body' => [$this, 'block_body'],
+            'page_title' => [$this, 'block_page_title'],
+            'content' => [$this, 'block_content'],
+            'footer' => [$this, 'block_footer'],
         ];
     }
 
@@ -87,46 +89,99 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
     /**
      * @return iterable<null|scalar|\Stringable>
      */
-    public function block_body(array $context, array $blocks = []): iterable
+    public function block_page_title(array $context, array $blocks = []): iterable
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
-        // line 6
-        yield "    <header>
-        <h1>Mes passions et loisirs :</h1>
-    </header>
-
-
-    <div class=\"content\">
-        <section id=\"section1\">
-            <h2>Les animaux</h2>
-            <p>Je suis passionée depuis mon plus jeune âge par les animaux
-                et plus précisément par les chiens et les chevaux.
-                J'ai fais plusieurs années d'équitation et j'ai eu la chance
-                de posséder une jument pendant 3 ans quand j'ai déménagé en Tunisie.
-            </p>
-        </section>
-
-        <section id=\"section2\">
-            <h2>Titre 2</h2>
-            <p>Paragraphe pour le titre 2.</p>
-        </section>
+        yield "Mes passions et loisirs :";
         
-        <section id=\"section3\">
-            <h2>Titre 3</h2>
-            <p>Paragraphe pour le titre 3.</p>
-        </section>
-    </div>    
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
-    <footer class=\"footer\">
-        <p>Pied de page</p>
-    </footer>
+        yield from [];
+    }
+
+    // line 7
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_content(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
+
+        // line 8
+        yield "<!-- Projet tunisie -->
+<section id=\"section1\">
+    <h2>Projet Familial</h2>
+    <p>De Août 2019 à Août 2022, j'ai vécu en Tunisie dans une maison construite en SuperAdobe.<br>
+        Nous avons créé une ferme pédagogique pour les enfants de la région.<br>
+        Nous avons accueilli des classes de primaire et de collège pour leur faire découvrir la nature et les animaux.<br>
+        Nous avons également organisé des stages de permaculture et de jardinage pour les adultes.<br>
+        Nous avons eu des chevaux, des chèvres, des poules, des lapins, des chiens et des chats.<br>
+        Nous avons également planté un verger et un potager.<br>
+        Nous avons organisé des événements pour les enfants et les adultes, comme des ateliers de cuisine, des ateliers de bricolage, des ateliers de jardinage, des at
+    </p>
+</section>
+
+<section id=\"section2\">
+    <h2>Les animaux</h2>
+    <p>Je suis passionnée depuis mon plus jeune âge par les animaux
+        et plus précisément par les chiens et les chevaux.<br>
+        J'ai fait plusieurs années d'équitation et j'ai eu la chance
+        de posséder une jument pendant 3 ans lorsque j'ai déménagé en Tunisie.<br>
+        Je me suis formée à l'équitation éthologique, qui est l'étude du comportement du cheval en liberté,<br>
+        et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.
+    </p>
+</section>
+
+<!-- Hackcess -->
+<section id=\"section3\">
+    <h2>Titre 3</h2>
+    <p>Paragraphe pour le titre 3.</p>
+</section>
+
+<!-- Loisirs créatifs -->
+<section id=\"section4\">
+    <h2>Titre 4</h2>
+    <p>Paragraphe pour le titre 4.</p>
+</section>
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        yield from [];
+    }
+
+    // line 45
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_footer(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
+
+        // line 46
+        yield "<p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -158,7 +213,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  184 => 46,  171 => 45,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -167,37 +222,48 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
 
 {% block title %}A propos{% endblock %}
 
-{% block body %}
-    <header>
-        <h1>Mes passions et loisirs :</h1>
-    </header>
+{% block page_title %}Mes passions et loisirs :{% endblock %}
 
+{% block content %}
+<!-- Projet tunisie -->
+<section id=\"section1\">
+    <h2>Projet Familial</h2>
+    <p>De Août 2019 à Août 2022, j'ai vécu en Tunisie dans une maison construite en SuperAdobe.<br>
+        Nous avons créé une ferme pédagogique pour les enfants de la région.<br>
+        Nous avons accueilli des classes de primaire et de collège pour leur faire découvrir la nature et les animaux.<br>
+        Nous avons également organisé des stages de permaculture et de jardinage pour les adultes.<br>
+        Nous avons eu des chevaux, des chèvres, des poules, des lapins, des chiens et des chats.<br>
+        Nous avons également planté un verger et un potager.<br>
+        Nous avons organisé des événements pour les enfants et les adultes, comme des ateliers de cuisine, des ateliers de bricolage, des ateliers de jardinage, des at
+    </p>
+</section>
 
-    <div class=\"content\">
-        <section id=\"section1\">
-            <h2>Les animaux</h2>
-            <p>Je suis passionée depuis mon plus jeune âge par les animaux
-                et plus précisément par les chiens et les chevaux.
-                J'ai fais plusieurs années d'équitation et j'ai eu la chance
-                de posséder une jument pendant 3 ans quand j'ai déménagé en Tunisie.
-            </p>
-        </section>
+<section id=\"section2\">
+    <h2>Les animaux</h2>
+    <p>Je suis passionnée depuis mon plus jeune âge par les animaux
+        et plus précisément par les chiens et les chevaux.<br>
+        J'ai fait plusieurs années d'équitation et j'ai eu la chance
+        de posséder une jument pendant 3 ans lorsque j'ai déménagé en Tunisie.<br>
+        Je me suis formée à l'équitation éthologique, qui est l'étude du comportement du cheval en liberté,<br>
+        et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.
+    </p>
+</section>
 
-        <section id=\"section2\">
-            <h2>Titre 2</h2>
-            <p>Paragraphe pour le titre 2.</p>
-        </section>
-        
-        <section id=\"section3\">
-            <h2>Titre 3</h2>
-            <p>Paragraphe pour le titre 3.</p>
-        </section>
-    </div>    
+<!-- Hackcess -->
+<section id=\"section3\">
+    <h2>Titre 3</h2>
+    <p>Paragraphe pour le titre 3.</p>
+</section>
 
+<!-- Loisirs créatifs -->
+<section id=\"section4\">
+    <h2>Titre 4</h2>
+    <p>Paragraphe pour le titre 4.</p>
+</section>
+{% endblock %}
 
-    <footer class=\"footer\">
-        <p>Pied de page</p>
-    </footer>
+{% block footer %}
+<p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
 {% endblock %}", "accueil/about.html.twig", "C:\\Symfony\\SAE_1.04\\SAE_104\\templates\\accueil\\about.html.twig");
     }
 }

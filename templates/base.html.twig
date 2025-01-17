@@ -8,7 +8,7 @@
         {% block stylesheets %}
         <style>
             h1, h2, p, .content, .footer {text-align: center;}
-            h2 {color: rgb(71, 68, 68);}
+            h2 {color: black;}
             p {color: black;}
         </style>
         {% endblock %}
@@ -30,7 +30,7 @@
                             <a class="nav-link" href="{{ path('app_accueil') }}">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ path('app_about') }}">About</a>
+                            <a class="nav-link" href="{{ path('app_about') }}">A propos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ path('app_cv') }}">CV</a>
@@ -53,7 +53,7 @@
         </style>
 
         <header>
-            <h1>{% block page_title %}Titre de la page{% endblock %}</h1>
+            <h1 class="page-title">{% block page_title %}Titre de la page{% endblock %}</h1>
         </header>
 
         <div class="content">
@@ -62,7 +62,7 @@
                 <h2>Titre 1</h2>
                 <p>Paragraphe pour le titre 1.</p>
             </section>
-            
+
             <section id="section2">
                 <h2>Titre 2</h2>
                 <p>Paragraphe pour le titre 2.</p>
@@ -71,6 +71,11 @@
             <section id="section3">
                 <h2>Titre 3</h2>
                 <p>Paragraphe pour le titre 3.</p>
+            </section>
+
+            <section id="section4">
+                <h2>Titre 4</h2>
+                <p>Paragraphe pour le titre 4.</p>
             </section>
             {% endblock %}
         </div>
