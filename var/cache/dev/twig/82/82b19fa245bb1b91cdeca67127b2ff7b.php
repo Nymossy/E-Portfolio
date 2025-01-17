@@ -136,7 +136,9 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
             
         <p>Dans le but d'être autosuffisant, que ce soit en fruit, légumes, viande, oeufs ;<br>
             Nous avons fait de la permaculture et de l'élevage de volailes (poules, canards, pintades, pigeons).<br>
-            Pour le travail du sol, nous utilisions la traction équine.</p>
+            Pour le travail du sol, nous utilisions la traction équine.<br>
+            De plus, j'ai construit une haie végétale afin de créer un enclos pour notre jument.<br>
+        </p>
     </section>
 
     <section id=\"section2\">
@@ -146,7 +148,9 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
             J'ai fait plusieurs années d'équitation et j'ai eu la chance
             de posséder une jument pendant 3 ans lorsque j'ai déménagé en Tunisie.<br>
             Je me suis formée à l'équitation éthologique, qui est l'étude du comportement du cheval en liberté,<br>
-            et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.
+            et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.<br>
+            Je me suis de plus formé en autodidacte à faire les soins de ma jument,<br>
+            que ce soit le pansage régulier, le parage naturel, ou encore les soins en cas de blessure ou de maladie.<br>
         </p>
     </section>
 
@@ -173,7 +177,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
         yield from [];
     }
 
-    // line 51
+    // line 55
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -186,7 +190,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 52
+        // line 56
         yield "    <p>Acia Chouchane - Tous droits réservés<br>
         CC BY-NC-ND</p>
 ";
@@ -220,7 +224,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  190 => 52,  177 => 51,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
+        return array (  194 => 56,  181 => 55,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -246,7 +250,9 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
             
         <p>Dans le but d'être autosuffisant, que ce soit en fruit, légumes, viande, oeufs ;<br>
             Nous avons fait de la permaculture et de l'élevage de volailes (poules, canards, pintades, pigeons).<br>
-            Pour le travail du sol, nous utilisions la traction équine.</p>
+            Pour le travail du sol, nous utilisions la traction équine.<br>
+            De plus, j'ai construit une haie végétale afin de créer un enclos pour notre jument.<br>
+        </p>
     </section>
 
     <section id=\"section2\">
@@ -256,7 +262,9 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
             J'ai fait plusieurs années d'équitation et j'ai eu la chance
             de posséder une jument pendant 3 ans lorsque j'ai déménagé en Tunisie.<br>
             Je me suis formée à l'équitation éthologique, qui est l'étude du comportement du cheval en liberté,<br>
-            et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.
+            et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.<br>
+            Je me suis de plus formé en autodidacte à faire les soins de ma jument,<br>
+            que ce soit le pansage régulier, le parage naturel, ou encore les soins en cas de blessure ou de maladie.<br>
         </p>
     </section>
 
