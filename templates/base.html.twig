@@ -8,8 +8,27 @@
         {% block stylesheets %}
         <style>
             h1, h2, p, .content, .footer {text-align: center;}
-            h2 {color: black;}
+            h2 {color: rgb(56, 54, 54);}
             p {color: black;}
+            #liste {text-align: left;
+                    margin-left: 38%;}
+
+            .page-title {color: rgb(56, 54, 54);}
+
+            body, html {height: 100%;
+                        margin: 0;
+                        display: flex;
+                        flex-direction: column;}
+
+            .content {flex: 1;
+                    padding: 1em;}
+
+            .footer {text-align: center;
+                    padding: 1em;
+                    background-color: #f8f9fa;}
+
+            header {text-align: center;
+                    width: 100%;}
         </style>
         {% endblock %}
 
@@ -46,12 +65,6 @@
             </div>
         </nav>
 
-        <style>
-            .content { padding: 1em; }
-            .footer { text-align: center; padding: 1em; background-color: #f8f9fa; position: absolute; bottom: 0; width: 100%; }
-            header { text-align: center; width: 100%; }
-        </style>
-
         <header>
             <h1 class="page-title">{% block page_title %}Titre de la page{% endblock %}</h1>
         </header>
@@ -82,7 +95,8 @@
 
         <footer class="footer">
             {% block footer %}
-            <p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
+            <p>Acia Chouchane - Tous droits réservés<br>
+                CC BY-NC-ND</p>
             {% endblock %}
         </footer>
     </body>

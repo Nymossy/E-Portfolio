@@ -98,7 +98,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
-        yield "Mes passions et loisirs :";
+        yield "Mes projets & mes passions :";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -122,41 +122,47 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
         // line 8
-        yield "<!-- Projet tunisie -->
-<section id=\"section1\">
-    <h2>Projet Familial</h2>
-    <p>De Août 2019 à Août 2022, j'ai vécu en Tunisie dans une maison construite en SuperAdobe.<br>
-        Nous avons créé une ferme pédagogique pour les enfants de la région.<br>
-        Nous avons accueilli des classes de primaire et de collège pour leur faire découvrir la nature et les animaux.<br>
-        Nous avons également organisé des stages de permaculture et de jardinage pour les adultes.<br>
-        Nous avons eu des chevaux, des chèvres, des poules, des lapins, des chiens et des chats.<br>
-        Nous avons également planté un verger et un potager.<br>
-        Nous avons organisé des événements pour les enfants et les adultes, comme des ateliers de cuisine, des ateliers de bricolage, des ateliers de jardinage, des at
-    </p>
-</section>
+        yield "    <!-- Projet tunisie -->
+    <section id=\"section1\">
+        <h2>Projet Familial - Tunisie</h2>
+        <p>De Août 2019 à Août 2022, j'ai vécu dans une maison construite en SuperAdobe dans une oliveraie.<br>
+            Nous avons créé une ferme pédagogique autonome en énergie :</p>
+        <p id=\"liste\">
+            - Eau avec la récupération d'eau de pluie et sondage, <br>
+            - Électricité avec des panneaux solaires et des batteries,<br>
+            - Chauffage avec un poêle rocket à bois,<br>
+            - Assainissement avec des toilettes sèches et une phytoépuration.<br>
+        </p>
+            
+        <p>Dans le but d'être autosuffisant, que ce soit en fruit, légumes, viande, oeufs ;<br>
+            Nous avons fait de la permaculture et de l'élevage de volailes (poules, canards, pintades, pigeons).<br>
+            Pour le travail du sol, nous utilisions la traction équine.</p>
+    </section>
 
-<section id=\"section2\">
-    <h2>Les animaux</h2>
-    <p>Je suis passionnée depuis mon plus jeune âge par les animaux
-        et plus précisément par les chiens et les chevaux.<br>
-        J'ai fait plusieurs années d'équitation et j'ai eu la chance
-        de posséder une jument pendant 3 ans lorsque j'ai déménagé en Tunisie.<br>
-        Je me suis formée à l'équitation éthologique, qui est l'étude du comportement du cheval en liberté,<br>
-        et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.
-    </p>
-</section>
+    <section id=\"section2\">
+        <h2>Les animaux</h2>
+        <p>Je suis passionnée depuis mon plus jeune âge par les animaux
+            et plus précisément par les chiens et les chevaux.<br>
+            J'ai fait plusieurs années d'équitation et j'ai eu la chance
+            de posséder une jument pendant 3 ans lorsque j'ai déménagé en Tunisie.<br>
+            Je me suis formée à l'équitation éthologique, qui est l'étude du comportement du cheval en liberté,<br>
+            et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.
+        </p>
+    </section>
 
-<!-- Hackcess -->
-<section id=\"section3\">
-    <h2>Titre 3</h2>
-    <p>Paragraphe pour le titre 3.</p>
-</section>
+    <!-- Hackcess -->
+    <section id=\"section3\">
+        <h2>Hackcess</h2>
+        <p>Je suis membre de l'association Hackcess, qui a pour but de promouvoir la cybersécurité.<br>
+            Nous organisons des événements et des formations pour sensibiliser le public à la sécurité informatique.
+        </p>
+    </section>
 
-<!-- Loisirs créatifs -->
-<section id=\"section4\">
-    <h2>Titre 4</h2>
-    <p>Paragraphe pour le titre 4.</p>
-</section>
+    <!-- Loisirs créatifs -->
+    <section id=\"section4\">
+        <h2>Titre 4</h2>
+        <p>Paragraphe pour le titre 4.</p>
+    </section>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -167,7 +173,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
         yield from [];
     }
 
-    // line 45
+    // line 51
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -180,8 +186,9 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 46
-        yield "<p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
+        // line 52
+        yield "    <p>Acia Chouchane - Tous droits réservés<br>
+        CC BY-NC-ND</p>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -213,7 +220,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  184 => 46,  171 => 45,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
+        return array (  190 => 52,  177 => 51,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -222,48 +229,55 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
 
 {% block title %}A propos{% endblock %}
 
-{% block page_title %}Mes passions et loisirs :{% endblock %}
+{% block page_title %}Mes projets & mes passions :{% endblock %}
 
 {% block content %}
-<!-- Projet tunisie -->
-<section id=\"section1\">
-    <h2>Projet Familial</h2>
-    <p>De Août 2019 à Août 2022, j'ai vécu en Tunisie dans une maison construite en SuperAdobe.<br>
-        Nous avons créé une ferme pédagogique pour les enfants de la région.<br>
-        Nous avons accueilli des classes de primaire et de collège pour leur faire découvrir la nature et les animaux.<br>
-        Nous avons également organisé des stages de permaculture et de jardinage pour les adultes.<br>
-        Nous avons eu des chevaux, des chèvres, des poules, des lapins, des chiens et des chats.<br>
-        Nous avons également planté un verger et un potager.<br>
-        Nous avons organisé des événements pour les enfants et les adultes, comme des ateliers de cuisine, des ateliers de bricolage, des ateliers de jardinage, des at
-    </p>
-</section>
+    <!-- Projet tunisie -->
+    <section id=\"section1\">
+        <h2>Projet Familial - Tunisie</h2>
+        <p>De Août 2019 à Août 2022, j'ai vécu dans une maison construite en SuperAdobe dans une oliveraie.<br>
+            Nous avons créé une ferme pédagogique autonome en énergie :</p>
+        <p id=\"liste\">
+            - Eau avec la récupération d'eau de pluie et sondage, <br>
+            - Électricité avec des panneaux solaires et des batteries,<br>
+            - Chauffage avec un poêle rocket à bois,<br>
+            - Assainissement avec des toilettes sèches et une phytoépuration.<br>
+        </p>
+            
+        <p>Dans le but d'être autosuffisant, que ce soit en fruit, légumes, viande, oeufs ;<br>
+            Nous avons fait de la permaculture et de l'élevage de volailes (poules, canards, pintades, pigeons).<br>
+            Pour le travail du sol, nous utilisions la traction équine.</p>
+    </section>
 
-<section id=\"section2\">
-    <h2>Les animaux</h2>
-    <p>Je suis passionnée depuis mon plus jeune âge par les animaux
-        et plus précisément par les chiens et les chevaux.<br>
-        J'ai fait plusieurs années d'équitation et j'ai eu la chance
-        de posséder une jument pendant 3 ans lorsque j'ai déménagé en Tunisie.<br>
-        Je me suis formée à l'équitation éthologique, qui est l'étude du comportement du cheval en liberté,<br>
-        et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.
-    </p>
-</section>
+    <section id=\"section2\">
+        <h2>Les animaux</h2>
+        <p>Je suis passionnée depuis mon plus jeune âge par les animaux
+            et plus précisément par les chiens et les chevaux.<br>
+            J'ai fait plusieurs années d'équitation et j'ai eu la chance
+            de posséder une jument pendant 3 ans lorsque j'ai déménagé en Tunisie.<br>
+            Je me suis formée à l'équitation éthologique, qui est l'étude du comportement du cheval en liberté,<br>
+            et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.
+        </p>
+    </section>
 
-<!-- Hackcess -->
-<section id=\"section3\">
-    <h2>Titre 3</h2>
-    <p>Paragraphe pour le titre 3.</p>
-</section>
+    <!-- Hackcess -->
+    <section id=\"section3\">
+        <h2>Hackcess</h2>
+        <p>Je suis membre de l'association Hackcess, qui a pour but de promouvoir la cybersécurité.<br>
+            Nous organisons des événements et des formations pour sensibiliser le public à la sécurité informatique.
+        </p>
+    </section>
 
-<!-- Loisirs créatifs -->
-<section id=\"section4\">
-    <h2>Titre 4</h2>
-    <p>Paragraphe pour le titre 4.</p>
-</section>
+    <!-- Loisirs créatifs -->
+    <section id=\"section4\">
+        <h2>Titre 4</h2>
+        <p>Paragraphe pour le titre 4.</p>
+    </section>
 {% endblock %}
 
 {% block footer %}
-<p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
+    <p>Acia Chouchane - Tous droits réservés<br>
+        CC BY-NC-ND</p>
 {% endblock %}", "accueil/about.html.twig", "C:\\Symfony\\SAE_1.04\\SAE_104\\templates\\accueil\\about.html.twig");
     }
 }

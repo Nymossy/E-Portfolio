@@ -65,12 +65,12 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         ";
         // line 8
         yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
-        // line 15
+        // line 34
         yield "
         ";
-        // line 16
+        // line 35
         yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
-        // line 19
+        // line 38
         yield "    </head>
     <body>
         <nav class=\"navbar navbar-expand-lg bg-dark\" data-bs-theme=\"dark\">
@@ -83,31 +83,31 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                     <ul class=\"navbar-nav ms-auto\">
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-        // line 30
+        // line 49
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_accueil");
         yield "\">Accueil</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-        // line 33
+        // line 52
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_about");
         yield "\">A propos</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-        // line 36
+        // line 55
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_cv");
         yield "\">CV</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-        // line 39
+        // line 58
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_portfolio_1");
         yield "\">Portfolio 1</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-        // line 42
+        // line 61
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_portfolio_2");
         yield "\">Portfolio 2</a>
                         </li>
@@ -116,31 +116,25 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
             </div>
         </nav>
 
-        <style>
-            .content { padding: 1em; }
-            .footer { text-align: center; padding: 1em; background-color: #f8f9fa; position: absolute; bottom: 0; width: 100%; }
-            header { text-align: center; width: 100%; }
-        </style>
-
         <header>
             <h1 class=\"page-title\">";
-        // line 56
+        // line 69
         yield from $this->unwrap()->yieldBlock('page_title', $context, $blocks);
         yield "</h1>
         </header>
 
         <div class=\"content\">
             ";
-        // line 60
+        // line 73
         yield from $this->unwrap()->yieldBlock('content', $context, $blocks);
-        // line 81
+        // line 94
         yield "        </div>
 
         <footer class=\"footer\">
             ";
-        // line 84
+        // line 97
         yield from $this->unwrap()->yieldBlock('footer', $context, $blocks);
-        // line 87
+        // line 101
         yield "        </footer>
     </body>
 </html>";
@@ -192,8 +186,27 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         // line 9
         yield "        <style>
             h1, h2, p, .content, .footer {text-align: center;}
-            h2 {color: black;}
+            h2 {color: rgb(56, 54, 54);}
             p {color: black;}
+            #liste {text-align: left;
+                    margin-left: 38%;}
+
+            .page-title {color: rgb(56, 54, 54);}
+
+            body, html {height: 100%;
+                        margin: 0;
+                        display: flex;
+                        flex-direction: column;}
+
+            .content {flex: 1;
+                    padding: 1em;}
+
+            .footer {text-align: center;
+                    padding: 1em;
+                    background-color: #f8f9fa;}
+
+            header {text-align: center;
+                    width: 100%;}
         </style>
         ";
         
@@ -205,7 +218,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 16
+    // line 35
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -218,10 +231,10 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 17
+        // line 36
         yield "            ";
         yield from $this->unwrap()->yieldBlock('importmap', $context, $blocks);
-        // line 18
+        // line 37
         yield "        ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -232,7 +245,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 17
+    // line 36
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -255,7 +268,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 56
+    // line 69
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -278,7 +291,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 60
+    // line 73
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -291,7 +304,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 61
+        // line 74
         yield "            <section id=\"section1\">
                 <h2>Titre 1</h2>
                 <p>Paragraphe pour le titre 1.</p>
@@ -321,7 +334,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 84
+    // line 97
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -334,8 +347,9 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 85
-        yield "            <p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
+        // line 98
+        yield "            <p>Acia Chouchane - Tous droits réservés<br>
+                CC BY-NC-ND</p>
             ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -367,7 +381,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  338 => 85,  325 => 84,  295 => 61,  282 => 60,  259 => 56,  236 => 17,  225 => 18,  222 => 17,  209 => 16,  193 => 9,  180 => 8,  157 => 5,  144 => 87,  142 => 84,  137 => 81,  135 => 60,  128 => 56,  111 => 42,  105 => 39,  99 => 36,  93 => 33,  87 => 30,  74 => 19,  72 => 16,  69 => 15,  67 => 8,  61 => 5,  55 => 1,);
+        return array (  351 => 98,  338 => 97,  308 => 74,  295 => 73,  272 => 69,  249 => 36,  238 => 37,  235 => 36,  222 => 35,  187 => 9,  174 => 8,  151 => 5,  138 => 101,  136 => 97,  131 => 94,  129 => 73,  122 => 69,  111 => 61,  105 => 58,  99 => 55,  93 => 52,  87 => 49,  74 => 38,  72 => 35,  69 => 34,  67 => 8,  61 => 5,  55 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -382,8 +396,27 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         {% block stylesheets %}
         <style>
             h1, h2, p, .content, .footer {text-align: center;}
-            h2 {color: black;}
+            h2 {color: rgb(56, 54, 54);}
             p {color: black;}
+            #liste {text-align: left;
+                    margin-left: 38%;}
+
+            .page-title {color: rgb(56, 54, 54);}
+
+            body, html {height: 100%;
+                        margin: 0;
+                        display: flex;
+                        flex-direction: column;}
+
+            .content {flex: 1;
+                    padding: 1em;}
+
+            .footer {text-align: center;
+                    padding: 1em;
+                    background-color: #f8f9fa;}
+
+            header {text-align: center;
+                    width: 100%;}
         </style>
         {% endblock %}
 
@@ -420,12 +453,6 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
             </div>
         </nav>
 
-        <style>
-            .content { padding: 1em; }
-            .footer { text-align: center; padding: 1em; background-color: #f8f9fa; position: absolute; bottom: 0; width: 100%; }
-            header { text-align: center; width: 100%; }
-        </style>
-
         <header>
             <h1 class=\"page-title\">{% block page_title %}Titre de la page{% endblock %}</h1>
         </header>
@@ -456,7 +483,8 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
 
         <footer class=\"footer\">
             {% block footer %}
-            <p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
+            <p>Acia Chouchane - Tous droits réservés<br>
+                CC BY-NC-ND</p>
             {% endblock %}
         </footer>
     </body>
