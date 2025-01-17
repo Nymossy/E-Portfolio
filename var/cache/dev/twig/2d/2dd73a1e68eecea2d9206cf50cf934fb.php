@@ -65,12 +65,12 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         ";
         // line 8
         yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
-        // line 10
+        // line 15
         yield "
         ";
-        // line 11
+        // line 16
         yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
-        // line 14
+        // line 19
         yield "    </head>
     <body>
         <nav class=\"navbar navbar-expand-lg bg-dark\" data-bs-theme=\"dark\">
@@ -83,31 +83,31 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                     <ul class=\"navbar-nav ms-auto\">
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-        // line 25
+        // line 30
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_accueil");
         yield "\">Accueil</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-        // line 28
+        // line 33
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_about");
         yield "\">About</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-        // line 31
+        // line 36
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_cv");
         yield "\">CV</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-        // line 34
+        // line 39
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_portfolio_1");
         yield "\">Portfolio 1</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-        // line 37
+        // line 42
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_portfolio_2");
         yield "\">Portfolio 2</a>
                         </li>
@@ -124,23 +124,23 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
 
         <header>
             <h1>";
-        // line 51
+        // line 56
         yield from $this->unwrap()->yieldBlock('page_title', $context, $blocks);
         yield "</h1>
         </header>
 
         <div class=\"content\">
             ";
-        // line 55
+        // line 60
         yield from $this->unwrap()->yieldBlock('content', $context, $blocks);
-        // line 71
+        // line 76
         yield "        </div>
 
         <footer class=\"footer\">
             ";
-        // line 74
+        // line 79
         yield from $this->unwrap()->yieldBlock('footer', $context, $blocks);
-        // line 77
+        // line 82
         yield "        </footer>
     </body>
 </html>";
@@ -190,7 +190,12 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 9
-        yield "        ";
+        yield "        <style>
+            h1, h2, p, .content, .footer {text-align: center;}
+            h2 {color: rgb(71, 68, 68);}
+            p {color: black;}
+        </style>
+        ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -200,7 +205,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 11
+    // line 16
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -213,10 +218,10 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 12
+        // line 17
         yield "            ";
         yield from $this->unwrap()->yieldBlock('importmap', $context, $blocks);
-        // line 13
+        // line 18
         yield "        ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -227,7 +232,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 12
+    // line 17
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -250,7 +255,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 51
+    // line 56
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -273,7 +278,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 55
+    // line 60
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -286,12 +291,12 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 56
+        // line 61
         yield "            <section id=\"section1\">
                 <h2>Titre 1</h2>
                 <p>Paragraphe pour le titre 1.</p>
             </section>
-
+            
             <section id=\"section2\">
                 <h2>Titre 2</h2>
                 <p>Paragraphe pour le titre 2.</p>
@@ -311,7 +316,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 74
+    // line 79
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -324,7 +329,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 75
+        // line 80
         yield "            <p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
             ";
         
@@ -357,7 +362,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  328 => 75,  315 => 74,  290 => 56,  277 => 55,  254 => 51,  231 => 12,  220 => 13,  217 => 12,  204 => 11,  193 => 9,  180 => 8,  157 => 5,  144 => 77,  142 => 74,  137 => 71,  135 => 55,  128 => 51,  111 => 37,  105 => 34,  99 => 31,  93 => 28,  87 => 25,  74 => 14,  72 => 11,  69 => 10,  67 => 8,  61 => 5,  55 => 1,);
+        return array (  333 => 80,  320 => 79,  295 => 61,  282 => 60,  259 => 56,  236 => 17,  225 => 18,  222 => 17,  209 => 16,  193 => 9,  180 => 8,  157 => 5,  144 => 82,  142 => 79,  137 => 76,  135 => 60,  128 => 56,  111 => 42,  105 => 39,  99 => 36,  93 => 33,  87 => 30,  74 => 19,  72 => 16,  69 => 15,  67 => 8,  61 => 5,  55 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -370,6 +375,11 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\">
         <link rel=\"stylesheet\" href=\"https://bootswatch.com/5/minty/bootstrap.min.css\">
         {% block stylesheets %}
+        <style>
+            h1, h2, p, .content, .footer {text-align: center;}
+            h2 {color: rgb(71, 68, 68);}
+            p {color: black;}
+        </style>
         {% endblock %}
 
         {% block javascripts %}
@@ -421,7 +431,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                 <h2>Titre 1</h2>
                 <p>Paragraphe pour le titre 1.</p>
             </section>
-
+            
             <section id=\"section2\">
                 <h2>Titre 2</h2>
                 <p>Paragraphe pour le titre 2.</p>

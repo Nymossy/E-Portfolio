@@ -3,12 +3,34 @@
 {% block title %}A propos{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <header>
+        <h1>Mes passions et loisirs :</h1>
+    </header>
 
-<div class="example-wrapper">
-    <h1>A propos :</h1>
-</div>
+
+    <div class="content">
+        <section id="section1">
+            <h2>Les animaux</h2>
+            <p>Je suis passionée depuis mon plus jeune âge par les animaux
+                et plus précisément par les chiens et les chevaux.
+                J'ai fais plusieurs années d'équitation et j'ai eu la chance
+                de posséder une jument pendant 3 ans quand j'ai déménagé en Tunisie.
+            </p>
+        </section>
+
+        <section id="section2">
+            <h2>Titre 2</h2>
+            <p>Paragraphe pour le titre 2.</p>
+        </section>
+        
+        <section id="section3">
+            <h2>Titre 3</h2>
+            <p>Paragraphe pour le titre 3.</p>
+        </section>
+    </div>    
+
+
+    <footer class="footer">
+        <p>Pied de page</p>
+    </footer>
 {% endblock %}

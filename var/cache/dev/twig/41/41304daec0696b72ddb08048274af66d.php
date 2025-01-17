@@ -97,7 +97,7 @@ class __TwigTemplate_3dd7064fb88399899148c4cdcdd92a4e extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
-        yield "Accueil Portfolio";
+        yield "Accueil E-Portfolio :";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -121,20 +121,32 @@ class __TwigTemplate_3dd7064fb88399899148c4cdcdd92a4e extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
         // line 8
-        yield "<section id=\"section1\">
-    <h2>Bienvenue</h2>
-    <p>Bienvenue sur notre site web. Voici la section d'accueil.</p>
-</section>
+        yield "    <section id=\"section1\">
+        <h2>Bonjour, bienvenue sur mon E-Portfolio</h2>
+        <p>Je m'appelle Acia chouchane, j'étudie actuellement dans le domaine informatique.<br>
+            Je suis une formation de BUT Réseau et Télécommunication, dans le groupe TP A1, à l'IUT de Roanne.
+        </p>
+    </section>
+    <br>
+    <section id=\"section2\">
+        <h2>Présentation</h2>
+        <p>Ayant baignée dans une famille multiculturelle, j'ai eu la chance de voyager et de découvrir
+            plusieurs traditions et cultures.<br>
+            J'ai surtout voyagé en France, Italie et Tunisie, et j'ai habité 3 ans en Tunisie lors
+            d'un projet famillial de ferme pedagogique dans un écodôme.<br>
+            <br>
+            J'ai plusieurs passions et loisirs que je vous laisse découvrir en cliquant sur le bouton ci-dessous.</p>
 
-<section id=\"section2\">
-    <h2>Nos Services</h2>
-    <p>Découvrez nos services exceptionnels.</p>
-</section>
-
-<section id=\"section3\">
-    <h2>Contact</h2>
-    <p>Contactez-nous pour plus d'informations.</p>
-</section>
+            <a href=\"";
+        // line 24
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_about");
+        yield "\" class=\"btn btn-primary\">Pour en savoir plus</a>
+    </section>
+    <br>
+    <section id=\"section3\">
+        <h2>Contact</h2>
+        <p>Contactez-nous pour plus d'informations.</p>
+    </section>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -166,7 +178,7 @@ class __TwigTemplate_3dd7064fb88399899148c4cdcdd92a4e extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  124 => 8,  111 => 7,  88 => 5,  65 => 3,  42 => 1,);
+        return array (  142 => 24,  124 => 8,  111 => 7,  88 => 5,  65 => 3,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -175,23 +187,32 @@ class __TwigTemplate_3dd7064fb88399899148c4cdcdd92a4e extends Template
 
 {% block title %}Accueil{% endblock %}
 
-{% block page_title %}Accueil Portfolio{% endblock %}
+{% block page_title %}Accueil E-Portfolio :{% endblock %}
 
 {% block content %}
-<section id=\"section1\">
-    <h2>Bienvenue</h2>
-    <p>Bienvenue sur notre site web. Voici la section d'accueil.</p>
-</section>
+    <section id=\"section1\">
+        <h2>Bonjour, bienvenue sur mon E-Portfolio</h2>
+        <p>Je m'appelle Acia chouchane, j'étudie actuellement dans le domaine informatique.<br>
+            Je suis une formation de BUT Réseau et Télécommunication, dans le groupe TP A1, à l'IUT de Roanne.
+        </p>
+    </section>
+    <br>
+    <section id=\"section2\">
+        <h2>Présentation</h2>
+        <p>Ayant baignée dans une famille multiculturelle, j'ai eu la chance de voyager et de découvrir
+            plusieurs traditions et cultures.<br>
+            J'ai surtout voyagé en France, Italie et Tunisie, et j'ai habité 3 ans en Tunisie lors
+            d'un projet famillial de ferme pedagogique dans un écodôme.<br>
+            <br>
+            J'ai plusieurs passions et loisirs que je vous laisse découvrir en cliquant sur le bouton ci-dessous.</p>
 
-<section id=\"section2\">
-    <h2>Nos Services</h2>
-    <p>Découvrez nos services exceptionnels.</p>
-</section>
-
-<section id=\"section3\">
-    <h2>Contact</h2>
-    <p>Contactez-nous pour plus d'informations.</p>
-</section>
+            <a href=\"{{ path('app_about') }}\" class=\"btn btn-primary\">Pour en savoir plus</a>
+    </section>
+    <br>
+    <section id=\"section3\">
+        <h2>Contact</h2>
+        <p>Contactez-nous pour plus d'informations.</p>
+    </section>
 {% endblock %}", "accueil/accueil.html.twig", "C:\\Symfony\\SAE_1.04\\SAE_104\\templates\\accueil\\accueil.html.twig");
     }
 }
