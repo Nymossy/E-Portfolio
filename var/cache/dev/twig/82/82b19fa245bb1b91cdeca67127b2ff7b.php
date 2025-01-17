@@ -140,8 +140,8 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
             - Assainissement avec des toilettes sèches et une phytoépuration.<br>
             <br>
             Dans le but d'être autosuffisant, que ce soit en fruit, légumes, viande, oeufs ;
-            nous avons fait de la permaculture et de l'élevage de volailes (poules, canards, pintades, pigeons).
-            Pour le travail du sol, nous utilisions la traction équine.
+            nous avons fait de la permaculture et de l'élevage de volailles (poules, canards, pintades, pigeons).
+            Pour le travail du sol, nous utilisions la traction animale.
             De plus, j'ai construit une haie végétale afin de créer un enclos pour notre jument.
         </p>
     </div>
@@ -161,34 +161,50 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
             Je suis passionnée depuis mon plus jeune âge par les animaux
             et plus précisément par les chiens et les chevaux.
             J'ai fait plusieurs années d'équitation et j'ai eu la chance
-            de posséder une jument pendant 3 ans lorsque j'habitait en Tunisie.<br><br>
+            de posséder une jument pendant 3 ans lorsque j'habitais en Tunisie.<br><br>
             Je me suis formée à l'équitation éthologique, qui est l'étude du comportement du cheval en liberté,
             et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.<br><br>
             Je me suis de plus formé en autodidacte à faire les soins de ma jument,
             que ce soit le pansage régulier, le parage naturel, ou encore les soins en cas de blessure ou de maladie.
         </p>
     </div>
+    <br> <br>
+
+    <!-- Loisirs créatifs -->
+    <h2>Les loisirs créatifs</h2>
+    <div class=\"img-text-container\" id=\"img3\">
+        <figure>
+            <img src=\"";
+        // line 54
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/bonheur.jpeg"), "html", null, true);
+        yield "\" style=\"width:100%; height:auto;\">
+            <figcaption>Un de mes dessins, fait à l'aquarelle et feutre fin noir</figcaption>
+        </figure>
+        <p>
+            J'aime particulièrement les activités manuelles et créatives.<br>
+            J'apprécie beaucoup le dessin et la peinture à l'aquarelle.
+            C'est depuis le lycée que je dessine de façon régulière et que j'offre des cartes à l'aquarelle
+            à mon entourage pour certaines occasions (fête, anniversaire, ...).
+            <br><br>
+            Mais je ne me restreint pas à l'art sur feuille,
+            je fais depuis plusieurs années des bijoux en recyclant des fils de cuivre ainsi que des plumes d'oiseaux.
+            Je récupère le fil de cuivre sur des vieux câbles informatique qui ne fonctionnent plus,
+            je les dénudes afin d'avoir accès au cuivre.
+            Ensuite je les façonnes de sorte à leur donner la forme que je veux, puis je les peints et les vernis.<br>
+            En complément, je  me forme à la couture, à la peinture sur tissus et à la création de cachet de cire.
+        </p>
+    </div>
 
 
-    <!-- Hackcess -->
+    <!-- Hackcess
     <section id=\"section3\">
         <h2>Hackcess</h2>
         <p>Je suis membre de l'association Hackcess, qui a pour but de promouvoir la cybersécurité.<br>
             Nous organisons des événements et des formations pour sensibiliser le public à la sécurité informatique.
         </p>
     </section>
-
-    <!-- Loisirs créatifs -->
-    <h2>Les loisirs créatifs</h2>
-    <div class=\"img-text-container\" id=\"img4\">
-        <img src=\"";
-        // line 61
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Saphyr.jpg"), "html", null, true);
-        yield "\" alt=\"Saphyr, ma jument et moi-même\" style=\"width:50%; height:auto;\">
-        <p>
-            
-        </p>
-    </div>
+    <br> <br>
+    -->
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -199,7 +215,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
         yield from [];
     }
 
-    // line 68
+    // line 84
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -212,7 +228,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 69
+        // line 85
         yield "    <p>Acia Chouchane - Tous droits réservés<br>
         CC BY-NC-ND</p>
 ";
@@ -246,7 +262,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  216 => 69,  203 => 68,  186 => 61,  156 => 34,  131 => 12,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
+        return array (  232 => 85,  219 => 84,  179 => 54,  156 => 34,  131 => 12,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -273,8 +289,8 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
             - Assainissement avec des toilettes sèches et une phytoépuration.<br>
             <br>
             Dans le but d'être autosuffisant, que ce soit en fruit, légumes, viande, oeufs ;
-            nous avons fait de la permaculture et de l'élevage de volailes (poules, canards, pintades, pigeons).
-            Pour le travail du sol, nous utilisions la traction équine.
+            nous avons fait de la permaculture et de l'élevage de volailles (poules, canards, pintades, pigeons).
+            Pour le travail du sol, nous utilisions la traction animale.
             De plus, j'ai construit une haie végétale afin de créer un enclos pour notre jument.
         </p>
     </div>
@@ -291,31 +307,47 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
             Je suis passionnée depuis mon plus jeune âge par les animaux
             et plus précisément par les chiens et les chevaux.
             J'ai fait plusieurs années d'équitation et j'ai eu la chance
-            de posséder une jument pendant 3 ans lorsque j'habitait en Tunisie.<br><br>
+            de posséder une jument pendant 3 ans lorsque j'habitais en Tunisie.<br><br>
             Je me suis formée à l'équitation éthologique, qui est l'étude du comportement du cheval en liberté,
             et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.<br><br>
             Je me suis de plus formé en autodidacte à faire les soins de ma jument,
             que ce soit le pansage régulier, le parage naturel, ou encore les soins en cas de blessure ou de maladie.
         </p>
     </div>
+    <br> <br>
+
+    <!-- Loisirs créatifs -->
+    <h2>Les loisirs créatifs</h2>
+    <div class=\"img-text-container\" id=\"img3\">
+        <figure>
+            <img src=\"{{ asset('img/bonheur.jpeg') }}\" style=\"width:100%; height:auto;\">
+            <figcaption>Un de mes dessins, fait à l'aquarelle et feutre fin noir</figcaption>
+        </figure>
+        <p>
+            J'aime particulièrement les activités manuelles et créatives.<br>
+            J'apprécie beaucoup le dessin et la peinture à l'aquarelle.
+            C'est depuis le lycée que je dessine de façon régulière et que j'offre des cartes à l'aquarelle
+            à mon entourage pour certaines occasions (fête, anniversaire, ...).
+            <br><br>
+            Mais je ne me restreint pas à l'art sur feuille,
+            je fais depuis plusieurs années des bijoux en recyclant des fils de cuivre ainsi que des plumes d'oiseaux.
+            Je récupère le fil de cuivre sur des vieux câbles informatique qui ne fonctionnent plus,
+            je les dénudes afin d'avoir accès au cuivre.
+            Ensuite je les façonnes de sorte à leur donner la forme que je veux, puis je les peints et les vernis.<br>
+            En complément, je  me forme à la couture, à la peinture sur tissus et à la création de cachet de cire.
+        </p>
+    </div>
 
 
-    <!-- Hackcess -->
+    <!-- Hackcess
     <section id=\"section3\">
         <h2>Hackcess</h2>
         <p>Je suis membre de l'association Hackcess, qui a pour but de promouvoir la cybersécurité.<br>
             Nous organisons des événements et des formations pour sensibiliser le public à la sécurité informatique.
         </p>
     </section>
-
-    <!-- Loisirs créatifs -->
-    <h2>Les loisirs créatifs</h2>
-    <div class=\"img-text-container\" id=\"img4\">
-        <img src=\"{{ asset('img/Saphyr.jpg') }}\" alt=\"Saphyr, ma jument et moi-même\" style=\"width:50%; height:auto;\">
-        <p>
-            
-        </p>
-    </div>
+    <br> <br>
+    -->
 {% endblock %}
 
 {% block footer %}

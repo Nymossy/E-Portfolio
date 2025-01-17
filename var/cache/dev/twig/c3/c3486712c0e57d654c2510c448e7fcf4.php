@@ -234,7 +234,7 @@ class __TwigTemplate_3cd8ce22f911c82ae14e46f26a92bd94 extends Template
             .img-text-container p {
                 width: 50%;
                 text-align: left;
-                font-size: 1.2em; /* Augmentez cette valeur pour augmenter la taille de la police */
+                font-size: 1.3em; /* Augmentez cette valeur pour augmenter la taille de la police */
             }
         </style>
         ";
@@ -496,7 +496,7 @@ class __TwigTemplate_3cd8ce22f911c82ae14e46f26a92bd94 extends Template
             .img-text-container p {
                 width: 50%;
                 text-align: left;
-                font-size: 1.2em; /* Augmentez cette valeur pour augmenter la taille de la police */
+                font-size: 1.3em; /* Augmentez cette valeur pour augmenter la taille de la police */
             }
         </style>
         {% endblock %}

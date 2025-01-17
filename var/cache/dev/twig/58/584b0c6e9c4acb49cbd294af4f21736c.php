@@ -31,7 +31,9 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
 
         $this->blocks = [
             'title' => [$this, 'block_title'],
-            'body' => [$this, 'block_body'],
+            'page_title' => [$this, 'block_page_title'],
+            'content' => [$this, 'block_content'],
+            'footer' => [$this, 'block_footer'],
         ];
     }
 
@@ -73,7 +75,7 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        yield "Page Type";
+        yield "Test";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -87,42 +89,78 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
     /**
      * @return iterable<null|scalar|\Stringable>
      */
-    public function block_body(array $context, array $blocks = []): iterable
+    public function block_page_title(array $context, array $blocks = []): iterable
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
-        // line 6
-        yield "    <header>
-        <h1>Titre de la page</h1>
-    </header>
-
-
-    <div class=\"content\">
-        <section id=\"section1\">
-            <h2>Titre 1</h2>
-            <p>Paragraphe pour le titre 1.</p>
-        </section>
-
-        <section id=\"section2\">
-            <h2>Titre 2</h2>
-            <p>Paragraphe pour le titre 2.</p>
-        </section>
+        yield "Titre page";
         
-        <section id=\"section3\">
-            <h2>Titre 3</h2>
-            <p>Paragraphe pour le titre 3.</p>
-        </section>
-    </div>    
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
-    <footer class=\"footer\">
-        <p>Pied de page</p>
-    </footer>
+        yield from [];
+    }
+
+    // line 7
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_content(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
+
+        // line 8
+        yield "<section id=\"section1\">
+    <h2>Titre 1</h2>
+    <p>Paragraphe pour le titre 1.</p>
+</section>
+
+<section id=\"section2\">
+    <h2>Titre 2</h2>
+    <p>Paragraphe pour le titre 2.</p>
+</section>
+
+<section id=\"section3\">
+    <h2>Titre 3</h2>
+    <p>Paragraphe pour le titre 3.</p>
+</section>
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        yield from [];
+    }
+
+    // line 24
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_footer(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
+
+        // line 25
+        yield "<p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -154,42 +192,36 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  163 => 25,  150 => 24,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Page Type{% endblock %}
+{% block title %}Test{% endblock %}
 
-{% block body %}
-    <header>
-        <h1>Titre de la page</h1>
-    </header>
+{% block page_title %}Titre page{% endblock %}
 
+{% block content %}
+<section id=\"section1\">
+    <h2>Titre 1</h2>
+    <p>Paragraphe pour le titre 1.</p>
+</section>
 
-    <div class=\"content\">
-        <section id=\"section1\">
-            <h2>Titre 1</h2>
-            <p>Paragraphe pour le titre 1.</p>
-        </section>
+<section id=\"section2\">
+    <h2>Titre 2</h2>
+    <p>Paragraphe pour le titre 2.</p>
+</section>
 
-        <section id=\"section2\">
-            <h2>Titre 2</h2>
-            <p>Paragraphe pour le titre 2.</p>
-        </section>
-        
-        <section id=\"section3\">
-            <h2>Titre 3</h2>
-            <p>Paragraphe pour le titre 3.</p>
-        </section>
-    </div>    
+<section id=\"section3\">
+    <h2>Titre 3</h2>
+    <p>Paragraphe pour le titre 3.</p>
+</section>
+{% endblock %}
 
-
-    <footer class=\"footer\">
-        <p>Pied de page</p>
-    </footer>
+{% block footer %}
+<p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
 {% endblock %}", "accueil/test.html.twig", "C:\\Symfony\\SAE_1.04\\SAE_104\\templates\\accueil\\test.html.twig");
     }
 }
