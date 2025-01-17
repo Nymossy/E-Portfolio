@@ -135,7 +135,7 @@ class __TwigTemplate_3dd7064fb88399899148c4cdcdd92a4e extends Template
             J'ai surtout voyagé en France, Italie et Tunisie, et j'ai habité 3 ans en Tunisie lors
             d'un projet famillial de ferme pedagogique dans un écodôme.<br>
             <br>
-            J'ai plusieurs passions et loisirs que je vous laisse découvrir en cliquant sur le bouton ci-dessous.</p>
+            J'ai plusieurs projets et passions que je vous laisse découvrir en cliquant sur le bouton ci-dessous.</p>
 
             <a href=\"";
         // line 24
@@ -204,7 +204,7 @@ class __TwigTemplate_3dd7064fb88399899148c4cdcdd92a4e extends Template
             J'ai surtout voyagé en France, Italie et Tunisie, et j'ai habité 3 ans en Tunisie lors
             d'un projet famillial de ferme pedagogique dans un écodôme.<br>
             <br>
-            J'ai plusieurs passions et loisirs que je vous laisse découvrir en cliquant sur le bouton ci-dessous.</p>
+            J'ai plusieurs projets et passions que je vous laisse découvrir en cliquant sur le bouton ci-dessous.</p>
 
             <a href=\"{{ path('app_about') }}\" class=\"btn btn-primary\">Pour en savoir plus</a>
     </section>

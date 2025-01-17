@@ -40,7 +40,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
     protected function doGetParent(array $context): bool|string|Template|TemplateWrapper
     {
         // line 1
-        return "base.html.twig";
+        return "base_img.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = []): iterable
@@ -52,7 +52,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "accueil/about.html.twig"));
 
-        $this->parent = $this->loadTemplate("base.html.twig", "accueil/about.html.twig", 1);
+        $this->parent = $this->loadTemplate("base_img.html.twig", "accueil/about.html.twig", 1);
         yield from $this->parent->unwrap()->yield($context, array_merge($this->blocks, $blocks));
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -123,36 +123,52 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
 
         // line 8
         yield "    <!-- Projet tunisie -->
-    <section id=\"section1\">
-        <h2>Projet Familial - Tunisie</h2>
-        <p>De Août 2019 à Août 2022, j'ai vécu dans une maison construite en SuperAdobe dans une oliveraie.<br>
-            Nous avons créé une ferme pédagogique autonome en énergie :</p>
-        <p id=\"liste\">
+    <h2>Projet Familial - Tunisie</h2>
+    <div class=\"img-text-container\" id=\"img1\">
+        <figure style=\"width:50%;\">
+            <img src=\"";
+        // line 12
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Maison.jpg"), "html", null, true);
+        yield "\" alt=\"Maison en SuperAdobe\" style=\"width:100%; height:auto;\">
+            <figcaption>Ma maison en SuperAdobe</figcaption>
+        </figure>
+        <p>De Août 2019 à Août 2022, j'ai vécu dans une maison construite en SuperAdobe dans une oliveraie.
+            Nous avons créé une ferme pédagogique autonome en énergie : <br>
             - Eau avec la récupération d'eau de pluie et sondage, <br>
             - Électricité avec des panneaux solaires et des batteries,<br>
             - Chauffage avec un poêle rocket à bois,<br>
             - Assainissement avec des toilettes sèches et une phytoépuration.<br>
+            <br>
+            Dans le but d'être autosuffisant, que ce soit en fruit, légumes, viande, oeufs ;
+            nous avons fait de la permaculture et de l'élevage de volailes (poules, canards, pintades, pigeons).
+            Pour le travail du sol, nous utilisions la traction équine.
+            De plus, j'ai construit une haie végétale afin de créer un enclos pour notre jument.
         </p>
-            
-        <p>Dans le but d'être autosuffisant, que ce soit en fruit, légumes, viande, oeufs ;<br>
-            Nous avons fait de la permaculture et de l'élevage de volailes (poules, canards, pintades, pigeons).<br>
-            Pour le travail du sol, nous utilisions la traction équine.<br>
-            De plus, j'ai construit une haie végétale afin de créer un enclos pour notre jument.<br>
-        </p>
-    </section>
-
-    <section id=\"section2\">
-        <h2>Les animaux</h2>
-        <p>Je suis passionnée depuis mon plus jeune âge par les animaux
-            et plus précisément par les chiens et les chevaux.<br>
+    </div>
+    <br> <br>
+    
+    <!-- Animaux - Saphyr -->
+    <h2>Les chevaux et l'équitation</h2>
+    <div class=\"img-text-container\" id=\"img2\">
+        <figure>
+            <img src=\"";
+        // line 34
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Saphyr.jpg"), "html", null, true);
+        yield "\" alt=\"Saphyr, ma jument et moi-même\" style=\"width:100%; height:auto;\">
+            <figcaption>Ma jument et moi-même</figcaption>
+        </figure>
+        <p>
+            Je suis passionnée depuis mon plus jeune âge par les animaux
+            et plus précisément par les chiens et les chevaux.
             J'ai fait plusieurs années d'équitation et j'ai eu la chance
-            de posséder une jument pendant 3 ans lorsque j'ai déménagé en Tunisie.<br>
-            Je me suis formée à l'équitation éthologique, qui est l'étude du comportement du cheval en liberté,<br>
-            et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.<br>
-            Je me suis de plus formé en autodidacte à faire les soins de ma jument,<br>
-            que ce soit le pansage régulier, le parage naturel, ou encore les soins en cas de blessure ou de maladie.<br>
+            de posséder une jument pendant 3 ans lorsque j'habitait en Tunisie.<br><br>
+            Je me suis formée à l'équitation éthologique, qui est l'étude du comportement du cheval en liberté,
+            et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.<br><br>
+            Je me suis de plus formé en autodidacte à faire les soins de ma jument,
+            que ce soit le pansage régulier, le parage naturel, ou encore les soins en cas de blessure ou de maladie.
         </p>
-    </section>
+    </div>
+
 
     <!-- Hackcess -->
     <section id=\"section3\">
@@ -163,10 +179,16 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
     </section>
 
     <!-- Loisirs créatifs -->
-    <section id=\"section4\">
-        <h2>Titre 4</h2>
-        <p>Paragraphe pour le titre 4.</p>
-    </section>
+    <h2>Les loisirs créatifs</h2>
+    <div class=\"img-text-container\" id=\"img4\">
+        <img src=\"";
+        // line 61
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Saphyr.jpg"), "html", null, true);
+        yield "\" alt=\"Saphyr, ma jument et moi-même\" style=\"width:50%; height:auto;\">
+        <p>
+            
+        </p>
+    </div>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -177,7 +199,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
         yield from [];
     }
 
-    // line 55
+    // line 68
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -190,7 +212,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 56
+        // line 69
         yield "    <p>Acia Chouchane - Tous droits réservés<br>
         CC BY-NC-ND</p>
 ";
@@ -224,12 +246,12 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  194 => 56,  181 => 55,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
+        return array (  216 => 69,  203 => 68,  186 => 61,  156 => 34,  131 => 12,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
     }
 
     public function getSourceContext(): Source
     {
-        return new Source("{% extends 'base.html.twig' %}
+        return new Source("{% extends 'base_img.html.twig' %}
 
 {% block title %}A propos{% endblock %}
 
@@ -237,36 +259,46 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
 
 {% block content %}
     <!-- Projet tunisie -->
-    <section id=\"section1\">
-        <h2>Projet Familial - Tunisie</h2>
-        <p>De Août 2019 à Août 2022, j'ai vécu dans une maison construite en SuperAdobe dans une oliveraie.<br>
-            Nous avons créé une ferme pédagogique autonome en énergie :</p>
-        <p id=\"liste\">
+    <h2>Projet Familial - Tunisie</h2>
+    <div class=\"img-text-container\" id=\"img1\">
+        <figure style=\"width:50%;\">
+            <img src=\"{{ asset('img/Maison.jpg') }}\" alt=\"Maison en SuperAdobe\" style=\"width:100%; height:auto;\">
+            <figcaption>Ma maison en SuperAdobe</figcaption>
+        </figure>
+        <p>De Août 2019 à Août 2022, j'ai vécu dans une maison construite en SuperAdobe dans une oliveraie.
+            Nous avons créé une ferme pédagogique autonome en énergie : <br>
             - Eau avec la récupération d'eau de pluie et sondage, <br>
             - Électricité avec des panneaux solaires et des batteries,<br>
             - Chauffage avec un poêle rocket à bois,<br>
             - Assainissement avec des toilettes sèches et une phytoépuration.<br>
+            <br>
+            Dans le but d'être autosuffisant, que ce soit en fruit, légumes, viande, oeufs ;
+            nous avons fait de la permaculture et de l'élevage de volailes (poules, canards, pintades, pigeons).
+            Pour le travail du sol, nous utilisions la traction équine.
+            De plus, j'ai construit une haie végétale afin de créer un enclos pour notre jument.
         </p>
-            
-        <p>Dans le but d'être autosuffisant, que ce soit en fruit, légumes, viande, oeufs ;<br>
-            Nous avons fait de la permaculture et de l'élevage de volailes (poules, canards, pintades, pigeons).<br>
-            Pour le travail du sol, nous utilisions la traction équine.<br>
-            De plus, j'ai construit une haie végétale afin de créer un enclos pour notre jument.<br>
-        </p>
-    </section>
-
-    <section id=\"section2\">
-        <h2>Les animaux</h2>
-        <p>Je suis passionnée depuis mon plus jeune âge par les animaux
-            et plus précisément par les chiens et les chevaux.<br>
+    </div>
+    <br> <br>
+    
+    <!-- Animaux - Saphyr -->
+    <h2>Les chevaux et l'équitation</h2>
+    <div class=\"img-text-container\" id=\"img2\">
+        <figure>
+            <img src=\"{{ asset('img/Saphyr.jpg') }}\" alt=\"Saphyr, ma jument et moi-même\" style=\"width:100%; height:auto;\">
+            <figcaption>Ma jument et moi-même</figcaption>
+        </figure>
+        <p>
+            Je suis passionnée depuis mon plus jeune âge par les animaux
+            et plus précisément par les chiens et les chevaux.
             J'ai fait plusieurs années d'équitation et j'ai eu la chance
-            de posséder une jument pendant 3 ans lorsque j'ai déménagé en Tunisie.<br>
-            Je me suis formée à l'équitation éthologique, qui est l'étude du comportement du cheval en liberté,<br>
-            et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.<br>
-            Je me suis de plus formé en autodidacte à faire les soins de ma jument,<br>
-            que ce soit le pansage régulier, le parage naturel, ou encore les soins en cas de blessure ou de maladie.<br>
+            de posséder une jument pendant 3 ans lorsque j'habitait en Tunisie.<br><br>
+            Je me suis formée à l'équitation éthologique, qui est l'étude du comportement du cheval en liberté,
+            et qui reprends les codes de ce comportement pour dresser un cheval de la manière la plus naturelle.<br><br>
+            Je me suis de plus formé en autodidacte à faire les soins de ma jument,
+            que ce soit le pansage régulier, le parage naturel, ou encore les soins en cas de blessure ou de maladie.
         </p>
-    </section>
+    </div>
+
 
     <!-- Hackcess -->
     <section id=\"section3\">
@@ -277,10 +309,13 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
     </section>
 
     <!-- Loisirs créatifs -->
-    <section id=\"section4\">
-        <h2>Titre 4</h2>
-        <p>Paragraphe pour le titre 4.</p>
-    </section>
+    <h2>Les loisirs créatifs</h2>
+    <div class=\"img-text-container\" id=\"img4\">
+        <img src=\"{{ asset('img/Saphyr.jpg') }}\" alt=\"Saphyr, ma jument et moi-même\" style=\"width:50%; height:auto;\">
+        <p>
+            
+        </p>
+    </div>
 {% endblock %}
 
 {% block footer %}
