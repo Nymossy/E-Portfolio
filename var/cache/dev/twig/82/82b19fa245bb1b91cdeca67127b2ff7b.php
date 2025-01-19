@@ -142,7 +142,9 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
             Dans le but d'être autosuffisant, que ce soit en fruit, légumes, viande, oeufs ;
             nous avons fait de la permaculture et de l'élevage de volailles (poules, canards, pintades, pigeons).
             Pour le travail du sol, nous utilisions la traction animale.
-            De plus, j'ai construit une haie végétale afin de créer un enclos pour notre jument.
+            De plus, j'ai construit une haie végétale afin de créer un enclos pour notre jument.<br>
+            <br>
+                <a href=\"https://www.facebook.com/PermacultureOliveraie/\" target=\"_blank\" class=\"btn btn-info\">Facebook du projet familial</a>
         </p>
     </div>
     <br> <br>
@@ -152,7 +154,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
     <div class=\"img-text-container\" id=\"img2\">
         <figure>
             <img src=\"";
-        // line 34
+        // line 36
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Saphyr.jpg"), "html", null, true);
         yield "\" alt=\"Saphyr, ma jument et moi-même\" style=\"width:100%; height:auto;\">
             <figcaption>Ma jument et moi-même</figcaption>
@@ -175,7 +177,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
     <div class=\"img-text-container\" id=\"img3\">
         <figure>
             <img src=\"";
-        // line 54
+        // line 56
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/bonheur.jpeg"), "html", null, true);
         yield "\" style=\"width:100%; height:auto;\">
             <figcaption>Un de mes dessins, fait à l'aquarelle et feutre fin noir</figcaption>
@@ -215,7 +217,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
         yield from [];
     }
 
-    // line 84
+    // line 86
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -228,7 +230,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 85
+        // line 87
         yield "    <p>Acia Chouchane - Tous droits réservés<br>
         CC BY-NC-ND</p>
 ";
@@ -262,7 +264,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  232 => 85,  219 => 84,  179 => 54,  156 => 34,  131 => 12,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
+        return array (  234 => 87,  221 => 86,  181 => 56,  158 => 36,  131 => 12,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -291,7 +293,9 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
             Dans le but d'être autosuffisant, que ce soit en fruit, légumes, viande, oeufs ;
             nous avons fait de la permaculture et de l'élevage de volailles (poules, canards, pintades, pigeons).
             Pour le travail du sol, nous utilisions la traction animale.
-            De plus, j'ai construit une haie végétale afin de créer un enclos pour notre jument.
+            De plus, j'ai construit une haie végétale afin de créer un enclos pour notre jument.<br>
+            <br>
+                <a href=\"https://www.facebook.com/PermacultureOliveraie/\" target=\"_blank\" class=\"btn btn-info\">Facebook du projet familial</a>
         </p>
     </div>
     <br> <br>

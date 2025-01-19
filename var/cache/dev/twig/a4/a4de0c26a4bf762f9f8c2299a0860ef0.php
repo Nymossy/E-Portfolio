@@ -151,6 +151,7 @@ class __TwigTemplate_46ec5634e2ff0fded2b204bae9c8d252 extends Template
         // line 12
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/CV_flou.png"), "html", null, true);
         yield "\" style=\"width:50%; height:auto; border-radius:50%; display:block; margin: 0 auto;\">
+            <br>
             <h2>Formations</h2>
             <p><b>Septembre 2024 - Juin 2025</b> <br>
                 IUT de Roanne, 42300 Roanne<br>
@@ -206,6 +207,7 @@ class __TwigTemplate_46ec5634e2ff0fded2b204bae9c8d252 extends Template
                 Jouault Équitation - Ruy 38300<br>
             </p>
             <br> <br>
+            <!-- Formulaire CV -->
             <div class=\"text-center\">
                 <a href=\"#\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#contactFormModal\">Formulaire CV</a>
             </div>
@@ -259,6 +261,7 @@ class __TwigTemplate_46ec5634e2ff0fded2b204bae9c8d252 extends Template
     <div class=\"text-text-container\">
         <div class=\"left\">
             <img src=\"{{ asset('img/CV_flou.png') }}\" style=\"width:50%; height:auto; border-radius:50%; display:block; margin: 0 auto;\">
+            <br>
             <h2>Formations</h2>
             <p><b>Septembre 2024 - Juin 2025</b> <br>
                 IUT de Roanne, 42300 Roanne<br>
@@ -314,6 +317,7 @@ class __TwigTemplate_46ec5634e2ff0fded2b204bae9c8d252 extends Template
                 Jouault Équitation - Ruy 38300<br>
             </p>
             <br> <br>
+            <!-- Formulaire CV -->
             <div class=\"text-center\">
                 <a href=\"#\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#contactFormModal\">Formulaire CV</a>
             </div>

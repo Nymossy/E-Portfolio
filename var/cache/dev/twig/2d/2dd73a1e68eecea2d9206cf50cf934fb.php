@@ -60,7 +60,10 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         // line 5
         yield from $this->unwrap()->yieldBlock('title', $context, $blocks);
         yield "</title>
-        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\">
+        <link rel=\"icon\" href=\"";
+        // line 6
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/logo.png"), "html", null, true);
+        yield "\">
         <link rel=\"stylesheet\" href=\"https://bootswatch.com/5/minty/bootstrap.min.css\">
         ";
         // line 8
@@ -99,13 +102,13 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                             <a class=\"nav-link\" href=\"";
         // line 100
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_portfolio_1");
-        yield "\">Portfolio 1</a>
+        yield "\">Point fort</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
         // line 103
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_portfolio_2");
-        yield "\">Portfolio 2</a>
+        yield "\">Point faible</a>
                         </li>
                     </ul>
                 </div>
@@ -144,8 +147,8 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                     <div class=\"modal-body\">
                         <form action=\"";
         // line 165
-        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("generate_cv_pdf");
-        yield "\" method=\"post\">
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/CV.pdf"), "html", null, true);
+        yield "\" method=\"get\">
                             <div class=\"mb-3\">
                                 <label for=\"name\" class=\"form-label\">Nom</label>
                                 <input type=\"text\" class=\"form-control\" id=\"name\" name=\"name\" required>
@@ -480,7 +483,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  440 => 182,  427 => 183,  424 => 182,  411 => 181,  399 => 152,  386 => 151,  369 => 142,  358 => 134,  347 => 126,  336 => 118,  332 => 116,  319 => 115,  296 => 111,  216 => 9,  203 => 8,  180 => 5,  168 => 186,  166 => 181,  147 => 165,  134 => 154,  132 => 151,  127 => 148,  125 => 115,  118 => 111,  107 => 103,  101 => 100,  95 => 97,  89 => 94,  83 => 91,  69 => 79,  67 => 8,  61 => 5,  55 => 1,);
+        return array (  443 => 182,  430 => 183,  427 => 182,  414 => 181,  402 => 152,  389 => 151,  372 => 142,  361 => 134,  350 => 126,  339 => 118,  335 => 116,  322 => 115,  299 => 111,  219 => 9,  206 => 8,  183 => 5,  171 => 186,  169 => 181,  150 => 165,  137 => 154,  135 => 151,  130 => 148,  128 => 115,  121 => 111,  110 => 103,  104 => 100,  98 => 97,  92 => 94,  86 => 91,  72 => 79,  70 => 8,  65 => 6,  61 => 5,  55 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -490,7 +493,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
     <head>
         <meta charset=\"UTF-8\">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\">
+        <link rel=\"icon\" href=\"{{ asset('img/logo.png') }}\">
         <link rel=\"stylesheet\" href=\"https://bootswatch.com/5/minty/bootstrap.min.css\">
         {% block stylesheets %}
         <style>
@@ -584,10 +587,10 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                             <a class=\"nav-link\" href=\"{{ path('app_cv') }}\">CV</a>
                         </li>
                         <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"{{ path('app_portfolio_1') }}\">Portfolio 1</a>
+                            <a class=\"nav-link\" href=\"{{ path('app_portfolio_1') }}\">Point fort</a>
                         </li>
                         <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"{{ path('app_portfolio_2') }}\">Portfolio 2</a>
+                            <a class=\"nav-link\" href=\"{{ path('app_portfolio_2') }}\">Point faible</a>
                         </li>
                     </ul>
                 </div>
@@ -649,7 +652,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                         <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
                     </div>
                     <div class=\"modal-body\">
-                        <form action=\"{{ path('generate_cv_pdf') }}\" method=\"post\">
+                        <form action=\"{{ asset('img/CV.pdf') }}\" method=\"get\">
                             <div class=\"mb-3\">
                                 <label for=\"name\" class=\"form-label\">Nom</label>
                                 <input type=\"text\" class=\"form-control\" id=\"name\" name=\"name\" required>

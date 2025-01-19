@@ -31,7 +31,9 @@ class __TwigTemplate_2caa61230f9ac1775d8875420cb667d5 extends Template
 
         $this->blocks = [
             'title' => [$this, 'block_title'],
-            'body' => [$this, 'block_body'],
+            'page_title' => [$this, 'block_page_title'],
+            'content' => [$this, 'block_content'],
+            'footer' => [$this, 'block_footer'],
         ];
     }
 
@@ -73,7 +75,7 @@ class __TwigTemplate_2caa61230f9ac1775d8875420cb667d5 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        yield "Portfolio page_2";
+        yield "Portfolio";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -87,24 +89,89 @@ class __TwigTemplate_2caa61230f9ac1775d8875420cb667d5 extends Template
     /**
      * @return iterable<null|scalar|\Stringable>
      */
-    public function block_body(array $context, array $blocks = []): iterable
+    public function block_page_title(array $context, array $blocks = []): iterable
     {
         $macros = $this->macros;
         $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
-        // line 6
-        yield "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+        yield "Points faibles";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
-<div class=\"example-wrapper\">
-    <h1>Portfolio page_2 :</h1>
-</div>
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        yield from [];
+    }
+
+    // line 7
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_content(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
+
+        // line 8
+        yield "    <!-- Points faibles -->
+    <div class=\"img-text-container\" id=\"img1\">
+        <figure style=\"width:50%;\">
+            <img src=\"";
+        // line 11
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Vlan.png"), "html", null, true);
+        yield "\" alt=\"Réseaux de la ressource R1.03\" style=\"width:80%; height:auto; display: block; margin: 0 auto;\">
+            <figcaption>Réseaux de la ressource R1.03</figcaption>
+        </figure>
+        <p>
+            <b>RT1 - Administrer les réseaux et l'Internet</b><br>
+            <b>• </b>Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications.<br>
+            <b>• </b>Comprendre l’architecture et les fondements des systèmes numériques, les principes du codage de l’information, des communications et de l’Internet<br>
+            <b>• </b>Configurer les fonctions de base du réseau local<br>
+            <b>• </b>Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation afin d'interagir avec ceux-ci pour la configuration et l'administration des réseaux et services fournis   <br>
+            <b>• </b>Savoir identifier les dysfonctionnements du réseau local   <br>
+            <b>• </b> Installer un poste client expliquer la procédure mise en place   <br>
+            <br>
+            <b>RT 2 - Connecter les entreprises et les usagers</b><br>
+            <b>• </b>Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement<br>
+            <b>• </b> Déployer des supports de transmission<br>
+        </p>
+    </div>
+    
+";
+        
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
+
+        
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
+
+        yield from [];
+    }
+
+    // line 31
+    /**
+     * @return iterable<null|scalar|\Stringable>
+     */
+    public function block_footer(array $context, array $blocks = []): iterable
+    {
+        $macros = $this->macros;
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
+
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
+
+        // line 32
+        yield "    <p>Acia Chouchane - Tous droits réservés<br>
+        CC BY-NC-ND</p>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -136,24 +203,44 @@ class __TwigTemplate_2caa61230f9ac1775d8875420cb667d5 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  100 => 6,  87 => 5,  64 => 3,  41 => 1,);
+        return array (  173 => 32,  160 => 31,  130 => 11,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Portfolio page_2{% endblock %}
+{% block title %}Portfolio{% endblock %}
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{% block page_title %}Points faibles{% endblock %}
 
-<div class=\"example-wrapper\">
-    <h1>Portfolio page_2 :</h1>
-</div>
+{% block content %}
+    <!-- Points faibles -->
+    <div class=\"img-text-container\" id=\"img1\">
+        <figure style=\"width:50%;\">
+            <img src=\"{{ asset('img/Vlan.png') }}\" alt=\"Réseaux de la ressource R1.03\" style=\"width:80%; height:auto; display: block; margin: 0 auto;\">
+            <figcaption>Réseaux de la ressource R1.03</figcaption>
+        </figure>
+        <p>
+            <b>RT1 - Administrer les réseaux et l'Internet</b><br>
+            <b>• </b>Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications.<br>
+            <b>• </b>Comprendre l’architecture et les fondements des systèmes numériques, les principes du codage de l’information, des communications et de l’Internet<br>
+            <b>• </b>Configurer les fonctions de base du réseau local<br>
+            <b>• </b>Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation afin d'interagir avec ceux-ci pour la configuration et l'administration des réseaux et services fournis   <br>
+            <b>• </b>Savoir identifier les dysfonctionnements du réseau local   <br>
+            <b>• </b> Installer un poste client expliquer la procédure mise en place   <br>
+            <br>
+            <b>RT 2 - Connecter les entreprises et les usagers</b><br>
+            <b>• </b>Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement<br>
+            <b>• </b> Déployer des supports de transmission<br>
+        </p>
+    </div>
+    
+{% endblock %}
+
+{% block footer %}
+    <p>Acia Chouchane - Tous droits réservés<br>
+        CC BY-NC-ND</p>
 {% endblock %}", "accueil/portfolio_2.html.twig", "C:\\Symfony\\SAE_1.04\\SAE_104\\templates\\accueil\\portfolio_2.html.twig");
     }
 }

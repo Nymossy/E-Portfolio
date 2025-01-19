@@ -1,14 +1,34 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Portfolio page_1{% endblock %}
+{% block title %}Portfolio{% endblock %}
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{% block page_title %}Points forts{% endblock %}
 
-<div class="example-wrapper">
-    <h1>Portfolio page_1 :</h1>
-</div>
+{% block content %}
+    <!-- Points forts -->
+    <div class="img-text-container" id="img1">
+        <figure style="width:50%;">
+            <img src="{{ asset('img/VA_blog.png') }}" alt="Blog de la ressource R1.09" style="width:70%; height:auto; display: block; margin: 0 auto;">
+            <figcaption>Blog de la ressource R1.09</figcaption>
+        </figure>
+        <p>
+            <b>RT2 - Connecter les entreprises et les usagers</b><br>
+            <b>• </b>Mesurer et analyser les signaux.<br>
+            <b>• </b>Communiquer avec un tiers et adapter son discours et sa langue à son interlocuteur<br>
+            <br>
+            <b>RT 3 - Créer des outils et applications informatiques pour les R&T</b><br>
+            <b>• </b>Utiliser un système informatique et ses outils<br>
+            <b>• </b>Lire, exécuter, corriger et modifier un programme<br>
+            <b>• </b>Traduire un algorithme, dans un langage et pour un environnement donné<br>
+            <b>• </b>Connaître l’architecture et les technologies d’un site Web<br>
+            <b>• </b>Choisir les mécanismes de gestion de données adaptés au développement de l’outil et argumenter ses choix<br>
+            <b>• </b>S’intégrer dans un environnement propice au développement et au travail collaboratif<br>
+        </p>
+    </div>
+    
+{% endblock %}
+
+{% block footer %}
+    <p>Acia Chouchane - Tous droits réservés<br>
+        CC BY-NC-ND</p>
 {% endblock %}

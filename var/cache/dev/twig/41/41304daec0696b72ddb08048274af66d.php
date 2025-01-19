@@ -149,7 +149,10 @@ class __TwigTemplate_3dd7064fb88399899148c4cdcdd92a4e extends Template
         <br>
         <section id=\"img3\">
             <h2>Contact</h2>
-            <p>Contactez-nous pour plus d'informations.</p>
+            <p>
+                Téléphone : +33 6 66 91 10 07  <br>
+                Email : acia.chouchane@etu.univ-st-etienne.fr
+            </p>
         </section>
     </div>
 ";
@@ -220,7 +223,10 @@ class __TwigTemplate_3dd7064fb88399899148c4cdcdd92a4e extends Template
         <br>
         <section id=\"img3\">
             <h2>Contact</h2>
-            <p>Contactez-nous pour plus d'informations.</p>
+            <p>
+                Téléphone : +33 6 66 91 10 07  <br>
+                Email : acia.chouchane@etu.univ-st-etienne.fr
+            </p>
         </section>
     </div>
 {% endblock %}", "accueil/accueil.html.twig", "C:\\Symfony\\SAE_1.04\\SAE_104\\templates\\accueil\\accueil.html.twig");

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        <link rel="icon" href="{{ asset('img/logo.png') }}">
         <link rel="stylesheet" href="https://bootswatch.com/5/minty/bootstrap.min.css">
         {% block stylesheets %}
         <style>
@@ -97,10 +97,10 @@
                             <a class="nav-link" href="{{ path('app_cv') }}">CV</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ path('app_portfolio_1') }}">Portfolio 1</a>
+                            <a class="nav-link" href="{{ path('app_portfolio_1') }}">Point fort</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ path('app_portfolio_2') }}">Portfolio 2</a>
+                            <a class="nav-link" href="{{ path('app_portfolio_2') }}">Point faible</a>
                         </li>
                     </ul>
                 </div>
@@ -162,7 +162,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form action="{{ path('generate_cv_pdf') }}" method="post">
+                        <form action="{{ asset('img/CV.pdf') }}" method="get">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nom</label>
                                 <input type="text" class="form-control" id="name" name="name" required>

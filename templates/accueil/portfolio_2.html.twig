@@ -1,14 +1,34 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Portfolio page_2{% endblock %}
+{% block title %}Portfolio{% endblock %}
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{% block page_title %}Points faibles{% endblock %}
 
-<div class="example-wrapper">
-    <h1>Portfolio page_2 :</h1>
-</div>
+{% block content %}
+    <!-- Points faibles -->
+    <div class="img-text-container" id="img1">
+        <figure style="width:50%;">
+            <img src="{{ asset('img/Vlan.png') }}" alt="Réseaux de la ressource R1.03" style="width:80%; height:auto; display: block; margin: 0 auto;">
+            <figcaption>Réseaux de la ressource R1.03</figcaption>
+        </figure>
+        <p>
+            <b>RT1 - Administrer les réseaux et l'Internet</b><br>
+            <b>• </b>Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications.<br>
+            <b>• </b>Comprendre l’architecture et les fondements des systèmes numériques, les principes du codage de l’information, des communications et de l’Internet<br>
+            <b>• </b>Configurer les fonctions de base du réseau local<br>
+            <b>• </b>Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation afin d'interagir avec ceux-ci pour la configuration et l'administration des réseaux et services fournis   <br>
+            <b>• </b>Savoir identifier les dysfonctionnements du réseau local   <br>
+            <b>• </b> Installer un poste client expliquer la procédure mise en place   <br>
+            <br>
+            <b>RT 2 - Connecter les entreprises et les usagers</b><br>
+            <b>• </b>Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement<br>
+            <b>• </b> Déployer des supports de transmission<br>
+        </p>
+    </div>
+    
+{% endblock %}
+
+{% block footer %}
+    <p>Acia Chouchane - Tous droits réservés<br>
+        CC BY-NC-ND</p>
 {% endblock %}
