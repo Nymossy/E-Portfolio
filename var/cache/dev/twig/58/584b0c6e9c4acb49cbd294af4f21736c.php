@@ -129,7 +129,10 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
 
 <section id=\"section2\">
     <h2>Titre 2</h2>
-    <p>Paragraphe pour le titre 2.</p>
+    <p>
+        <b>date</b><br>
+        text
+    </p>
 </section>
 
 <section id=\"section3\">
@@ -146,7 +149,7 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
         yield from [];
     }
 
-    // line 24
+    // line 27
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -159,7 +162,7 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 25
+        // line 28
         yield "<p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
 ";
         
@@ -192,7 +195,7 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  163 => 25,  150 => 24,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
+        return array (  166 => 28,  153 => 27,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -211,7 +214,10 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
 
 <section id=\"section2\">
     <h2>Titre 2</h2>
-    <p>Paragraphe pour le titre 2.</p>
+    <p>
+        <b>date</b><br>
+        text
+    </p>
 </section>
 
 <section id=\"section3\">

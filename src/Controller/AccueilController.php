@@ -2,9 +2,12 @@
 
 namespace App\Controller;
 
+use Dompdf\Dompdf;
+use Dompdf\Options;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Routing\Annotation\Route;
 
 class AccueilController extends AbstractController
 {
@@ -54,6 +57,44 @@ class AccueilController extends AbstractController
         return $this->render('accueil/test.html.twig', [
             'controller_name' => 'AccueilController',
         ]);
+    }
+
+    
+    #[Route('/generate-cv-pdf', name: 'generate_cv_pdf', methods: ['POST'])]
+    public function generateCvPdf(Request $request): Response
+    {
+        // Récupérer les données du formulaire
+        $name = $request->request->get('name');
+        $email = $request->request->get('email');
+
+        // Configurer Dompdf selon vos besoins
+        $pdfOptions = new Options();
+        $pdfOptions->set('defaultFont', 'Arial');
+
+        // Instancier Dompdf avec nos options
+        $dompdf = new Dompdf($pdfOptions);
+
+        // Récupérer le HTML généré dans notre fichier twig
+        $html = $this->renderView('accueil/cv.html.twig', [
+            'name' => $name,
+            'email' => $email,
+        ]);
+
+        // Charger le HTML dans Dompdf
+        $dompdf->loadHtml($html);
+
+        // (Optionnel) Configurer la taille et l'orientation du papier
+        $dompdf->setPaper('A4', 'portrait');
+
+        // Rendre le HTML en PDF
+        $dompdf->render();
+
+        // Sortir le PDF généré dans le navigateur (téléchargement forcé)
+        $dompdf->stream("CV.pdf", [
+            "Attachment" => true
+        ]);
+
+        return new Response("PDF généré avec succès", 200);
     }
 
 }
