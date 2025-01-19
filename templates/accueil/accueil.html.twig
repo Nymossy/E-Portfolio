@@ -2,30 +2,35 @@
 
 {% block title %}Accueil{% endblock %}
 
-{% block page_title %}Accueil E-Portfolio :{% endblock %}
+{% block page_title %}
+    <h1 class="page-title">Accueil E-Portfolio :</h1>
+{% endblock %}
 
 {% block content %}
-    <section id="section1">
-        <h2>Bonjour, bienvenue sur mon E-Portfolio</h2>
-        <p>Je m'appelle Acia chouchane, j'étudie actuellement dans le domaine informatique.<br>
-            Je suis une formation de BUT Réseau et Télécommunication, dans le groupe TP A1, à l'IUT de Roanne.
-        </p>
-    </section>
-    <br>
-    <section id="section2">
-        <h2>Présentation</h2>
-        <p>Ayant baignée dans une famille multiculturelle, j'ai eu la chance de voyager et de découvrir
-            plusieurs traditions et cultures.<br>
-            J'ai surtout voyagé en France, Italie et Tunisie, et j'ai habité 3 ans en Tunisie lors
-            d'un projet famillial de ferme pedagogique dans un écodôme.<br>
-            <br>
-            J'ai plusieurs projets et passions que je vous laisse découvrir en cliquant sur le bouton ci-dessous.</p>
+    <div class="content style2">
+        <section id="img1">
+            <p>
+                Bonjour, bienvenue sur mon E-Portfolio.<br>
+                Je m'appelle Acia Chouchane, j'étudie actuellement dans le domaine informatique.<br>
+                Je suis une formation de BUT Réseau et Télécommunication, dans le groupe TP A1, à l'IUT de Roanne.
+            </p>
+        </section>
+        <br>
+        <section id="img2">
+            <h2>Présentation</h2>
+            <p>Ayant baignée dans une famille multiculturelle, j'ai eu la chance de voyager et de découvrir
+                plusieurs traditions et cultures.<br>
+                J'ai surtout voyagé en France, Italie et Tunisie, et j'ai habité 3 ans en Tunisie lors
+                d'un projet familial de ferme pédagogique dans un écodôme.<br>
+                <br>
+                J'ai plusieurs projets et passions que je vous laisse découvrir en cliquant sur le bouton ci-dessous.</p>
 
             <a href="{{ path('app_about') }}" class="btn btn-primary">Pour en savoir plus</a>
-    </section>
-    <br>
-    <section id="section3">
-        <h2>Contact</h2>
-        <p>Contactez-nous pour plus d'informations.</p>
-    </section>
+        </section>
+        <br>
+        <section id="img3">
+            <h2>Contact</h2>
+            <p>Contactez-nous pour plus d'informations.</p>
+        </section>
+    </div>
 {% endblock %}

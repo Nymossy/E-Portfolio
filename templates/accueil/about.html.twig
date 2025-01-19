@@ -1,4 +1,4 @@
-{% extends 'base_img.html.twig' %}
+{% extends 'base.html.twig' %}
 
 {% block title %}A propos{% endblock %}
 
@@ -6,7 +6,7 @@
 
 {% block content %}
     <!-- Projet tunisie -->
-    <h2>Projet Familial - Tunisie</h2>
+    <h2 class="img-text-container">Projet Familial - Tunisie</h2>
     <div class="img-text-container" id="img1">
         <figure style="width:50%;">
             <img src="{{ asset('img/Maison.jpg') }}" alt="Maison en SuperAdobe" style="width:100%; height:auto;">
@@ -28,7 +28,7 @@
     <br> <br>
     
     <!-- Animaux - Saphyr -->
-    <h2>Les chevaux et l'équitation</h2>
+    <h2 class="img-text-container">Les chevaux et l'équitation</h2>
     <div class="img-text-container" id="img2">
         <figure>
             <img src="{{ asset('img/Saphyr.jpg') }}" alt="Saphyr, ma jument et moi-même" style="width:100%; height:auto;">
@@ -48,7 +48,7 @@
     <br> <br>
 
     <!-- Loisirs créatifs -->
-    <h2>Les loisirs créatifs</h2>
+    <h2 class="img-text-container">Les loisirs créatifs</h2>
     <div class="img-text-container" id="img3">
         <figure>
             <img src="{{ asset('img/bonheur.jpeg') }}" style="width:100%; height:auto;">

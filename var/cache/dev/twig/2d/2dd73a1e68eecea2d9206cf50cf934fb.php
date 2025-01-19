@@ -65,12 +65,12 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         ";
         // line 8
         yield from $this->unwrap()->yieldBlock('stylesheets', $context, $blocks);
-        // line 37
+        // line 79
         yield "
         ";
-        // line 38
+        // line 80
         yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
-        // line 41
+        // line 83
         yield "    </head>
     <body>
         <nav class=\"navbar navbar-expand-lg bg-dark\" data-bs-theme=\"dark\">
@@ -83,31 +83,31 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                     <ul class=\"navbar-nav ms-auto\">
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-        // line 52
+        // line 94
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_accueil");
         yield "\">Accueil</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-        // line 55
+        // line 97
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_about");
         yield "\">A propos</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-        // line 58
+        // line 100
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_cv");
         yield "\">CV</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-        // line 61
+        // line 103
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_portfolio_1");
         yield "\">Portfolio 1</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
-        // line 64
+        // line 106
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_portfolio_2");
         yield "\">Portfolio 2</a>
                         </li>
@@ -118,23 +118,23 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
 
         <header>
             <h1 class=\"page-title\">";
-        // line 72
+        // line 114
         yield from $this->unwrap()->yieldBlock('page_title', $context, $blocks);
         yield "</h1>
         </header>
 
         <div class=\"content\">
             ";
-        // line 76
+        // line 118
         yield from $this->unwrap()->yieldBlock('content', $context, $blocks);
-        // line 97
+        // line 151
         yield "        </div>
 
         <footer class=\"footer\">
             ";
-        // line 100
+        // line 154
         yield from $this->unwrap()->yieldBlock('footer', $context, $blocks);
-        // line 104
+        // line 157
         yield "        </footer>
     </body>
 </html>";
@@ -185,16 +185,10 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
 
         // line 9
         yield "        <style>
-            h1, h2, p, .content, .footer {text-align: center;}
+                /* Styles communs */
             h2 {color: rgb(56, 54, 54);}
-            
             p {color: black;
                 font-size: 1.3em;}
-
-            #liste {text-align: left;
-                    margin-left: 38%;}
-
-            .page-title {color: rgb(56, 54, 54);}
 
             body, html {height: 100%;
                         margin: 0;
@@ -209,7 +203,55 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                     background-color: #f8f9fa;}
 
             header {text-align: center;
-                    width: 100%;}
+                    width: 100%;
+                    background-color: #f8f9fa;}
+
+                /* Styles spécifiques au CV */
+            .content.style3 {display: flex;
+                            align-items: flex-start;
+                            justify-content: center;
+                            margin-bottom: 1em;}
+
+            .text-text-container {display: flex;
+                                align-items: flex-start;
+                                justify-content: center;
+                                margin-bottom: 1em;}
+
+            .text-text-container .left {width: 40%;
+                                        padding: 1em;
+                                        margin-right: 1em;}
+
+            .text-text-container .right {width: 60%;
+                                        padding: 1em;
+                                        margin-left: 1em;}
+
+            .text-text-container h2 {text-align: center;}
+            .text-text-container p {text-align: left;}
+
+                /* Styles spécifiques aux autres */
+            h1, .content.style2, .footer.style2 {text-align: center;}
+            .content.style2 li {color: black;
+                                margin-left: -20%;}
+
+            .page-title {color: rgb(56, 54, 54);}
+            .img-text-container {display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-bottom: 1em;}
+
+            .img-text-container figure {width: 50%;
+                                        margin-right: 1em;}
+
+            .img-text-container img {width: 100%;
+                                    height: auto;}
+
+            .img-text-container figcaption {text-align: center;
+                                            font-size: 1.2em;
+                                            color: #555;}
+
+            .img-text-container p {width: 50%;
+                                text-align: left;
+                                font-size: 1.3em;}
         </style>
         ";
         
@@ -221,7 +263,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 38
+    // line 80
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -234,10 +276,10 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 39
+        // line 81
         yield "            ";
         yield from $this->unwrap()->yieldBlock('importmap', $context, $blocks);
-        // line 40
+        // line 82
         yield "        ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -248,7 +290,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 39
+    // line 81
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -271,7 +313,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 72
+    // line 114
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -294,7 +336,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 76
+    // line 118
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -307,26 +349,50 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 77
-        yield "            <section id=\"section1\">
-                <h2>Titre 1</h2>
-                <p>Paragraphe pour le titre 1.</p>
-            </section>
+        // line 119
+        yield "                <div class=\"img-text-container\" id=\"img1\">
+                    <figure>
+                        <img src=\"";
+        // line 121
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/maison.jpg"), "html", null, true);
+        yield "\" alt=\"Maison en SuperAdobe\">
+                        <figcaption>Ma maison en SuperAdobe</figcaption>
+                    </figure>
+                    <p>Texte associé à l'image 1.</p>
+                </div>
 
-            <section id=\"section2\">
-                <h2>Titre 2</h2>
-                <p>Paragraphe pour le titre 2.</p>
-            </section>
-            
-            <section id=\"section3\">
-                <h2>Titre 3</h2>
-                <p>Paragraphe pour le titre 3.</p>
-            </section>
+                <div class=\"img-text-container\" id=\"img2\">
+                    <figure>
+                        <img src=\"";
+        // line 129
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/maison.jpg"), "html", null, true);
+        yield "\" alt=\"Maison en SuperAdobe\">
+                        <figcaption>Ma maison en SuperAdobe</figcaption>
+                    </figure>
+                    <p>Texte associé à l'image 2.</p>
+                </div>
 
-            <section id=\"section4\">
-                <h2>Titre 4</h2>
-                <p>Paragraphe pour le titre 4.</p>
-            </section>
+                <div class=\"img-text-container\" id=\"img3\">
+                    <figure>
+                        <img src=\"";
+        // line 137
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/maison.jpg"), "html", null, true);
+        yield "\" alt=\"Maison en SuperAdobe\">
+                        <figcaption>Ma maison en SuperAdobe</figcaption>
+                    </figure>
+                    <p>Texte associé à l'image 3.</p>
+                </div>
+    
+                <div class=\"img-text-container\" id=\"img4\">
+                    <figure>
+                        <img src=\"";
+        // line 145
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/maison.jpg"), "html", null, true);
+        yield "\" alt=\"Maison en SuperAdobe\">
+                        <figcaption>Ma maison en SuperAdobe</figcaption>
+                    </figure>
+                    <p>Texte associé à l'image 4.</p>
+                </div>
             ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -337,7 +403,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 100
+    // line 154
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -350,9 +416,8 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 101
-        yield "            <p>Acia Chouchane - Tous droits réservés<br>
-                CC BY-NC-ND</p>
+        // line 155
+        yield "            <p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
             ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -384,7 +449,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  354 => 101,  341 => 100,  311 => 77,  298 => 76,  275 => 72,  252 => 39,  241 => 40,  238 => 39,  225 => 38,  187 => 9,  174 => 8,  151 => 5,  138 => 104,  136 => 100,  131 => 97,  129 => 76,  122 => 72,  111 => 64,  105 => 61,  99 => 58,  93 => 55,  87 => 52,  74 => 41,  72 => 38,  69 => 37,  67 => 8,  61 => 5,  55 => 1,);
+        return array (  420 => 155,  407 => 154,  390 => 145,  379 => 137,  368 => 129,  357 => 121,  353 => 119,  340 => 118,  317 => 114,  294 => 81,  283 => 82,  280 => 81,  267 => 80,  187 => 9,  174 => 8,  151 => 5,  138 => 157,  136 => 154,  131 => 151,  129 => 118,  122 => 114,  111 => 106,  105 => 103,  99 => 100,  93 => 97,  87 => 94,  74 => 83,  72 => 80,  69 => 79,  67 => 8,  61 => 5,  55 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -398,16 +463,10 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         <link rel=\"stylesheet\" href=\"https://bootswatch.com/5/minty/bootstrap.min.css\">
         {% block stylesheets %}
         <style>
-            h1, h2, p, .content, .footer {text-align: center;}
+                /* Styles communs */
             h2 {color: rgb(56, 54, 54);}
-            
             p {color: black;
                 font-size: 1.3em;}
-
-            #liste {text-align: left;
-                    margin-left: 38%;}
-
-            .page-title {color: rgb(56, 54, 54);}
 
             body, html {height: 100%;
                         margin: 0;
@@ -422,7 +481,55 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                     background-color: #f8f9fa;}
 
             header {text-align: center;
-                    width: 100%;}
+                    width: 100%;
+                    background-color: #f8f9fa;}
+
+                /* Styles spécifiques au CV */
+            .content.style3 {display: flex;
+                            align-items: flex-start;
+                            justify-content: center;
+                            margin-bottom: 1em;}
+
+            .text-text-container {display: flex;
+                                align-items: flex-start;
+                                justify-content: center;
+                                margin-bottom: 1em;}
+
+            .text-text-container .left {width: 40%;
+                                        padding: 1em;
+                                        margin-right: 1em;}
+
+            .text-text-container .right {width: 60%;
+                                        padding: 1em;
+                                        margin-left: 1em;}
+
+            .text-text-container h2 {text-align: center;}
+            .text-text-container p {text-align: left;}
+
+                /* Styles spécifiques aux autres */
+            h1, .content.style2, .footer.style2 {text-align: center;}
+            .content.style2 li {color: black;
+                                margin-left: -20%;}
+
+            .page-title {color: rgb(56, 54, 54);}
+            .img-text-container {display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-bottom: 1em;}
+
+            .img-text-container figure {width: 50%;
+                                        margin-right: 1em;}
+
+            .img-text-container img {width: 100%;
+                                    height: auto;}
+
+            .img-text-container figcaption {text-align: center;
+                                            font-size: 1.2em;
+                                            color: #555;}
+
+            .img-text-container p {width: 50%;
+                                text-align: left;
+                                font-size: 1.3em;}
         </style>
         {% endblock %}
 
@@ -465,32 +572,43 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
 
         <div class=\"content\">
             {% block content %}
-            <section id=\"section1\">
-                <h2>Titre 1</h2>
-                <p>Paragraphe pour le titre 1.</p>
-            </section>
+                <div class=\"img-text-container\" id=\"img1\">
+                    <figure>
+                        <img src=\"{{ asset('img/maison.jpg') }}\" alt=\"Maison en SuperAdobe\">
+                        <figcaption>Ma maison en SuperAdobe</figcaption>
+                    </figure>
+                    <p>Texte associé à l'image 1.</p>
+                </div>
 
-            <section id=\"section2\">
-                <h2>Titre 2</h2>
-                <p>Paragraphe pour le titre 2.</p>
-            </section>
-            
-            <section id=\"section3\">
-                <h2>Titre 3</h2>
-                <p>Paragraphe pour le titre 3.</p>
-            </section>
+                <div class=\"img-text-container\" id=\"img2\">
+                    <figure>
+                        <img src=\"{{ asset('img/maison.jpg') }}\" alt=\"Maison en SuperAdobe\">
+                        <figcaption>Ma maison en SuperAdobe</figcaption>
+                    </figure>
+                    <p>Texte associé à l'image 2.</p>
+                </div>
 
-            <section id=\"section4\">
-                <h2>Titre 4</h2>
-                <p>Paragraphe pour le titre 4.</p>
-            </section>
+                <div class=\"img-text-container\" id=\"img3\">
+                    <figure>
+                        <img src=\"{{ asset('img/maison.jpg') }}\" alt=\"Maison en SuperAdobe\">
+                        <figcaption>Ma maison en SuperAdobe</figcaption>
+                    </figure>
+                    <p>Texte associé à l'image 3.</p>
+                </div>
+    
+                <div class=\"img-text-container\" id=\"img4\">
+                    <figure>
+                        <img src=\"{{ asset('img/maison.jpg') }}\" alt=\"Maison en SuperAdobe\">
+                        <figcaption>Ma maison en SuperAdobe</figcaption>
+                    </figure>
+                    <p>Texte associé à l'image 4.</p>
+                </div>
             {% endblock %}
         </div>
 
         <footer class=\"footer\">
             {% block footer %}
-            <p>Acia Chouchane - Tous droits réservés<br>
-                CC BY-NC-ND</p>
+            <p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
             {% endblock %}
         </footer>
     </body>

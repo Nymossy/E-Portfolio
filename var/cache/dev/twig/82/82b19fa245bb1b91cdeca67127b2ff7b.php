@@ -40,7 +40,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
     protected function doGetParent(array $context): bool|string|Template|TemplateWrapper
     {
         // line 1
-        return "base_img.html.twig";
+        return "base.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = []): iterable
@@ -52,7 +52,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "accueil/about.html.twig"));
 
-        $this->parent = $this->loadTemplate("base_img.html.twig", "accueil/about.html.twig", 1);
+        $this->parent = $this->loadTemplate("base.html.twig", "accueil/about.html.twig", 1);
         yield from $this->parent->unwrap()->yield($context, array_merge($this->blocks, $blocks));
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -123,7 +123,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
 
         // line 8
         yield "    <!-- Projet tunisie -->
-    <h2>Projet Familial - Tunisie</h2>
+    <h2 class=\"img-text-container\">Projet Familial - Tunisie</h2>
     <div class=\"img-text-container\" id=\"img1\">
         <figure style=\"width:50%;\">
             <img src=\"";
@@ -148,7 +148,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
     <br> <br>
     
     <!-- Animaux - Saphyr -->
-    <h2>Les chevaux et l'équitation</h2>
+    <h2 class=\"img-text-container\">Les chevaux et l'équitation</h2>
     <div class=\"img-text-container\" id=\"img2\">
         <figure>
             <img src=\"";
@@ -171,7 +171,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
     <br> <br>
 
     <!-- Loisirs créatifs -->
-    <h2>Les loisirs créatifs</h2>
+    <h2 class=\"img-text-container\">Les loisirs créatifs</h2>
     <div class=\"img-text-container\" id=\"img3\">
         <figure>
             <img src=\"";
@@ -267,7 +267,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
 
     public function getSourceContext(): Source
     {
-        return new Source("{% extends 'base_img.html.twig' %}
+        return new Source("{% extends 'base.html.twig' %}
 
 {% block title %}A propos{% endblock %}
 
@@ -275,7 +275,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
 
 {% block content %}
     <!-- Projet tunisie -->
-    <h2>Projet Familial - Tunisie</h2>
+    <h2 class=\"img-text-container\">Projet Familial - Tunisie</h2>
     <div class=\"img-text-container\" id=\"img1\">
         <figure style=\"width:50%;\">
             <img src=\"{{ asset('img/Maison.jpg') }}\" alt=\"Maison en SuperAdobe\" style=\"width:100%; height:auto;\">
@@ -297,7 +297,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
     <br> <br>
     
     <!-- Animaux - Saphyr -->
-    <h2>Les chevaux et l'équitation</h2>
+    <h2 class=\"img-text-container\">Les chevaux et l'équitation</h2>
     <div class=\"img-text-container\" id=\"img2\">
         <figure>
             <img src=\"{{ asset('img/Saphyr.jpg') }}\" alt=\"Saphyr, ma jument et moi-même\" style=\"width:100%; height:auto;\">
@@ -317,7 +317,7 @@ class __TwigTemplate_54421194ca2491538347b08ee637cf02 extends Template
     <br> <br>
 
     <!-- Loisirs créatifs -->
-    <h2>Les loisirs créatifs</h2>
+    <h2 class=\"img-text-container\">Les loisirs créatifs</h2>
     <div class=\"img-text-container\" id=\"img3\">
         <figure>
             <img src=\"{{ asset('img/bonheur.jpeg') }}\" style=\"width:100%; height:auto;\">
