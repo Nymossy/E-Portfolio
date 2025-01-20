@@ -131,6 +131,16 @@ class __TwigTemplate_dc21f98c4a63476e89dd6ce0623dec19 extends Template
             <figcaption>Blog de la ressource R1.09</figcaption>
         </figure>
         <p>
+            J’ai renforcé mes compétences en programmation, notamment en algorithmique, Python et C,
+            en travaillant sur des mises en situation où il fallait lire, exécuter et corriger des erreurs.
+            Bien que le module ait été intéressant, il devenait parfois répétitif. Ayant déjà une bonne maîtrise de Python,
+            la logique de la programmation ne m’a pas paru difficile.
+            Je pratique régulièrement la programmation, ce qui m’a permis de suivre cette formation avec aisance.
+            En parallèle, bien que le HTML et le CSS ne m’étaient pas inconnus, l’apprentissage de Symfony et de Bootswatch
+            a enrichi mes connaissances et m’a permis de développer de nouvelles compétences.
+            Cette formation a approfondi ma pratique du développement web, me préparant ainsi pour des projets
+            plus complexes et personnalisés.
+            <br><br>
             <b>• AC13.02 :</b> Lire, exécuter, corriger et modifier un programme<br>
             <a href=\"https://docs.google.com/document/u/0/d/15WrXsQLB4R1tTitfmMpd5MTwT9qZjtNH2iBufextqtg/edit\" target=\"_blank\" class=\"btn btn-info\">Preuve AC13.02</a>
             <a href=\"https://docs.google.com/document/u/0/d/1QAayoYewBrEr53cqyalPYlFezgGBwczPNNI5iPLai5I/edit\" target=\"_blank\" class=\"btn btn-info\">Écrit réflexif AC13.02</a>
@@ -151,7 +161,7 @@ class __TwigTemplate_dc21f98c4a63476e89dd6ce0623dec19 extends Template
         yield from [];
     }
 
-    // line 26
+    // line 36
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -164,7 +174,7 @@ class __TwigTemplate_dc21f98c4a63476e89dd6ce0623dec19 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 27
+        // line 37
         yield "    <p>Acia Chouchane - Tous droits réservés<br>
         CC BY-NC-ND</p>
 ";
@@ -198,7 +208,7 @@ class __TwigTemplate_dc21f98c4a63476e89dd6ce0623dec19 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  168 => 27,  155 => 26,  129 => 10,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
+        return array (  178 => 37,  165 => 36,  129 => 10,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -216,6 +226,16 @@ class __TwigTemplate_dc21f98c4a63476e89dd6ce0623dec19 extends Template
             <figcaption>Blog de la ressource R1.09</figcaption>
         </figure>
         <p>
+            J’ai renforcé mes compétences en programmation, notamment en algorithmique, Python et C,
+            en travaillant sur des mises en situation où il fallait lire, exécuter et corriger des erreurs.
+            Bien que le module ait été intéressant, il devenait parfois répétitif. Ayant déjà une bonne maîtrise de Python,
+            la logique de la programmation ne m’a pas paru difficile.
+            Je pratique régulièrement la programmation, ce qui m’a permis de suivre cette formation avec aisance.
+            En parallèle, bien que le HTML et le CSS ne m’étaient pas inconnus, l’apprentissage de Symfony et de Bootswatch
+            a enrichi mes connaissances et m’a permis de développer de nouvelles compétences.
+            Cette formation a approfondi ma pratique du développement web, me préparant ainsi pour des projets
+            plus complexes et personnalisés.
+            <br><br>
             <b>• AC13.02 :</b> Lire, exécuter, corriger et modifier un programme<br>
             <a href=\"https://docs.google.com/document/u/0/d/15WrXsQLB4R1tTitfmMpd5MTwT9qZjtNH2iBufextqtg/edit\" target=\"_blank\" class=\"btn btn-info\">Preuve AC13.02</a>
             <a href=\"https://docs.google.com/document/u/0/d/1QAayoYewBrEr53cqyalPYlFezgGBwczPNNI5iPLai5I/edit\" target=\"_blank\" class=\"btn btn-info\">Écrit réflexif AC13.02</a>

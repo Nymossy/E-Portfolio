@@ -131,6 +131,17 @@ class __TwigTemplate_2caa61230f9ac1775d8875420cb667d5 extends Template
             <figcaption>Analyse signaux de la ressource R1.13</figcaption>
         </figure>
         <p>
+            Nous avons appris à réaliser un devis professionnel, une compétence clé pour notre futur métier.
+            Nous avons aussi travaillé sur la communication avec les clients, que ce soit à l'oral,
+            par mail ou via d'autres canaux, et analysé le langage non verbal, un aspect particulièrement enrichissant.
+            Bien que l’apprentissage de la réalisation de devis soit important,
+            c’est la communication et l’analyse du langage non verbal qui m’ont le plus intéressé.
+            J’ai abordé les fondamentaux de l’électricité, la mesure de signaux continus et alternatifs,
+            la modulation d’une onde, l’utilisation des nombres complexes, et testé la connectivité des câbles en cuivre.
+            Cependant, en raison de mes difficultés en mathématiques, certaines notions,
+            comme l’utilisation des nombres complexes, ont été difficiles à maîtriser.
+            Bien que cet apprentissage soit essentiel, il n’a pas été particulièrement positif pour moi.
+            <br><br>
             <b>• AC12.01 :</b> Mesurer et analyser les signaux<br>
             <a href=\"https://docs.google.com/document/u/0/d/10qg9N-pXgZA6ngpbWBh6osQfhMDxuhusSVSPJpF6uhs/edit\" target=\"_blank\" class=\"btn btn-info\">Preuve AC12.01</a>
             <a href=\"https://docs.google.com/document/u/0/d/1iq9FVvwBq291zwAuN2beR0XuWZtLKazZtceiopDknyo/edit\" target=\"_blank\" class=\"btn btn-info\">Écrit réflexif AC12.01</a>
@@ -152,7 +163,7 @@ class __TwigTemplate_2caa61230f9ac1775d8875420cb667d5 extends Template
         yield from [];
     }
 
-    // line 27
+    // line 38
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -165,7 +176,7 @@ class __TwigTemplate_2caa61230f9ac1775d8875420cb667d5 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 28
+        // line 39
         yield "    <p>Acia Chouchane - Tous droits réservés<br>
         CC BY-NC-ND</p>
 ";
@@ -199,7 +210,7 @@ class __TwigTemplate_2caa61230f9ac1775d8875420cb667d5 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  169 => 28,  156 => 27,  129 => 10,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
+        return array (  180 => 39,  167 => 38,  129 => 10,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -217,6 +228,17 @@ class __TwigTemplate_2caa61230f9ac1775d8875420cb667d5 extends Template
             <figcaption>Analyse signaux de la ressource R1.13</figcaption>
         </figure>
         <p>
+            Nous avons appris à réaliser un devis professionnel, une compétence clé pour notre futur métier.
+            Nous avons aussi travaillé sur la communication avec les clients, que ce soit à l'oral,
+            par mail ou via d'autres canaux, et analysé le langage non verbal, un aspect particulièrement enrichissant.
+            Bien que l’apprentissage de la réalisation de devis soit important,
+            c’est la communication et l’analyse du langage non verbal qui m’ont le plus intéressé.
+            J’ai abordé les fondamentaux de l’électricité, la mesure de signaux continus et alternatifs,
+            la modulation d’une onde, l’utilisation des nombres complexes, et testé la connectivité des câbles en cuivre.
+            Cependant, en raison de mes difficultés en mathématiques, certaines notions,
+            comme l’utilisation des nombres complexes, ont été difficiles à maîtriser.
+            Bien que cet apprentissage soit essentiel, il n’a pas été particulièrement positif pour moi.
+            <br><br>
             <b>• AC12.01 :</b> Mesurer et analyser les signaux<br>
             <a href=\"https://docs.google.com/document/u/0/d/10qg9N-pXgZA6ngpbWBh6osQfhMDxuhusSVSPJpF6uhs/edit\" target=\"_blank\" class=\"btn btn-info\">Preuve AC12.01</a>
             <a href=\"https://docs.google.com/document/u/0/d/1iq9FVvwBq291zwAuN2beR0XuWZtLKazZtceiopDknyo/edit\" target=\"_blank\" class=\"btn btn-info\">Écrit réflexif AC12.01</a>
