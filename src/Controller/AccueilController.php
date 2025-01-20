@@ -58,7 +58,7 @@ class AccueilController extends AbstractController
             'controller_name' => 'AccueilController',
         ]);
     }
-
+    /*
     #[Route('/test', name: 'app_test')]
     public function test(): Response
     {
@@ -66,7 +66,7 @@ class AccueilController extends AbstractController
             'controller_name' => 'AccueilController',
         ]);
     }
-
+    */
     
     #[Route('/generate-cv-pdf', name: 'generate_cv_pdf', methods: ['POST'])]
     public function generateCvPdf(Request $request): Response

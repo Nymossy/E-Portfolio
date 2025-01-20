@@ -98,7 +98,7 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
-        yield "Titre page";
+        yield "Nouvelle page";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -122,23 +122,19 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
         // line 8
-        yield "<section id=\"section1\">
-    <h2>Titre 1</h2>
-    <p>Paragraphe pour le titre 1.</p>
-</section>
-
-<section id=\"section2\">
-    <h2>Titre 2</h2>
-    <p>
-        <b>date</b><br>
-        text
-    </p>
-</section>
-
-<section id=\"section3\">
-    <h2>Titre 3</h2>
-    <p>Paragraphe pour le titre 3.</p>
-</section>
+        yield "<h2 class=\"img-text-container\">Citation</h2>
+    <div class=\"img-text-container text-center\" id=\"img1\">
+        <figure style=\"display: inline-block; width: 50%;\">
+            <img src=\"";
+        // line 11
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/citation.png"), "html", null, true);
+        yield "\" alt=\"Maison en SuperAdobe\" class=\"img-fluid\" style=\"display: block; margin: 0 auto;\">
+        </figure>
+        <p>
+            Ne vous trompez pas entre ma personnalité et mon attitude...<br>
+            Ma personnalité est qui je suis, mon attitude dépend de qui vous êtes !
+        </p>
+    </div>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -149,7 +145,7 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
         yield from [];
     }
 
-    // line 27
+    // line 20
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -162,7 +158,7 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 28
+        // line 21
         yield "<p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
 ";
         
@@ -195,7 +191,7 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  166 => 28,  153 => 27,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
+        return array (  162 => 21,  149 => 20,  130 => 11,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -204,26 +200,19 @@ class __TwigTemplate_66cb78f0eaed989ce560539757ca3548 extends Template
 
 {% block title %}Test{% endblock %}
 
-{% block page_title %}Titre page{% endblock %}
+{% block page_title %}Nouvelle page{% endblock %}
 
 {% block content %}
-<section id=\"section1\">
-    <h2>Titre 1</h2>
-    <p>Paragraphe pour le titre 1.</p>
-</section>
-
-<section id=\"section2\">
-    <h2>Titre 2</h2>
-    <p>
-        <b>date</b><br>
-        text
-    </p>
-</section>
-
-<section id=\"section3\">
-    <h2>Titre 3</h2>
-    <p>Paragraphe pour le titre 3.</p>
-</section>
+<h2 class=\"img-text-container\">Citation</h2>
+    <div class=\"img-text-container text-center\" id=\"img1\">
+        <figure style=\"display: inline-block; width: 50%;\">
+            <img src=\"{{ asset('img/citation.png') }}\" alt=\"Maison en SuperAdobe\" class=\"img-fluid\" style=\"display: block; margin: 0 auto;\">
+        </figure>
+        <p>
+            Ne vous trompez pas entre ma personnalité et mon attitude...<br>
+            Ma personnalité est qui je suis, mon attitude dépend de qui vous êtes !
+        </p>
+    </div>
 {% endblock %}
 
 {% block footer %}

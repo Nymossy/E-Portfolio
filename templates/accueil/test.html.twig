@@ -2,26 +2,19 @@
 
 {% block title %}Test{% endblock %}
 
-{% block page_title %}Titre page{% endblock %}
+{% block page_title %}Nouvelle page{% endblock %}
 
 {% block content %}
-<section id="section1">
-    <h2>Titre 1</h2>
-    <p>Paragraphe pour le titre 1.</p>
-</section>
-
-<section id="section2">
-    <h2>Titre 2</h2>
-    <p>
-        <b>date</b><br>
-        text
-    </p>
-</section>
-
-<section id="section3">
-    <h2>Titre 3</h2>
-    <p>Paragraphe pour le titre 3.</p>
-</section>
+<h2 class="img-text-container">Citation</h2>
+    <div class="img-text-container text-center" id="img1">
+        <figure style="display: inline-block; width: 50%;">
+            <img src="{{ asset('img/citation.png') }}" alt="Maison en SuperAdobe" class="img-fluid" style="display: block; margin: 0 auto;">
+        </figure>
+        <p>
+            Ne vous trompez pas entre ma personnalité et mon attitude...<br>
+            Ma personnalité est qui je suis, mon attitude dépend de qui vous êtes !
+        </p>
+    </div>
 {% endblock %}
 
 {% block footer %}
