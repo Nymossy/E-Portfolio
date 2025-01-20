@@ -843,3 +843,4 @@ cd8c60,127.0.0.1,GET,http://127.0.0.1:8000/portfolio_2,1737380694,,200,request
 a06105,127.0.0.1,GET,http://127.0.0.1:8000/portfolio_3,1737380694,,200,request
 09affe,127.0.0.1,GET,http://127.0.0.1:8000/portfolio_2,1737380697,,200,request
 08a1a5,127.0.0.1,GET,http://127.0.0.1:8000/portfolio_1,1737380698,,200,request
+7b256f,127.0.0.1,GET,http://127.0.0.1:8000/test,1737380720,,200,request
