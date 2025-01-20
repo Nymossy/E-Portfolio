@@ -121,14 +121,14 @@ class __TwigTemplate_96c43a332644ca6bddb18e480b3e3105 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
         // line 8
-        yield "    <div class=\"container\">
-        <div class=\"row\">
-            <div class=\"col-md-6\">
+        yield "    <div class=\"container d-flex align-items-center\" style=\"min-height: 100vh;\">
+        <div class=\"row w-100\">
+            <div class=\"col-md-6 d-flex align-items-center justify-content-center\">
                 <figure>
                     <img src=\"";
         // line 12
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Vlan.png"), "html", null, true);
-        yield "\" alt=\"Réseaux de la ressource R1.03\" class=\"img-fluid\" style=\"display: block; margin: 0 auto;\">
+        yield "\" alt=\"Réseaux de la ressource R1.03\" class=\"img-fluid\">
                     <figcaption>Réseaux de la ressource R1.03</figcaption>
                 </figure>
             </div>
@@ -202,11 +202,11 @@ class __TwigTemplate_96c43a332644ca6bddb18e480b3e3105 extends Template
 {% block page_title %}RT1 - Administrer les réseaux et l'Internet{% endblock %}
 
 {% block content %}
-    <div class=\"container\">
-        <div class=\"row\">
-            <div class=\"col-md-6\">
+    <div class=\"container d-flex align-items-center\" style=\"min-height: 100vh;\">
+        <div class=\"row w-100\">
+            <div class=\"col-md-6 d-flex align-items-center justify-content-center\">
                 <figure>
-                    <img src=\"{{ asset('img/Vlan.png') }}\" alt=\"Réseaux de la ressource R1.03\" class=\"img-fluid\" style=\"display: block; margin: 0 auto;\">
+                    <img src=\"{{ asset('img/Vlan.png') }}\" alt=\"Réseaux de la ressource R1.03\" class=\"img-fluid\">
                     <figcaption>Réseaux de la ressource R1.03</figcaption>
                 </figure>
             </div>

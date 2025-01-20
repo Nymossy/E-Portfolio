@@ -58,7 +58,7 @@ class AccueilController extends AbstractController
             'controller_name' => 'AccueilController',
         ]);
     }
-    /*
+    /* Nouvelle route pour accéder à la page test.html.twig :
     #[Route('/test', name: 'app_test')]
     public function test(): Response
     {
