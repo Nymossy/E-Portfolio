@@ -102,13 +102,19 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                             <a class=\"nav-link\" href=\"";
         // line 100
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_portfolio_1");
-        yield "\">Point fort</a>
+        yield "\">Administrer</a>
                         </li>
                         <li class=\"nav-item\">
                             <a class=\"nav-link\" href=\"";
         // line 103
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_portfolio_2");
-        yield "\">Point faible</a>
+        yield "\">Connecter</a>
+                        </li>
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"";
+        // line 106
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_portfolio_3");
+        yield "\">Programmer</a>
                         </li>
                     </ul>
                 </div>
@@ -117,23 +123,23 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
 
         <header>
             <h1 class=\"page-title\">";
-        // line 111
+        // line 114
         yield from $this->unwrap()->yieldBlock('page_title', $context, $blocks);
         yield "</h1>
         </header>
 
         <div class=\"content\">
             ";
-        // line 115
+        // line 118
         yield from $this->unwrap()->yieldBlock('content', $context, $blocks);
-        // line 148
+        // line 151
         yield "        </div>
 
         <footer class=\"footer\">
             ";
-        // line 151
-        yield from $this->unwrap()->yieldBlock('footer', $context, $blocks);
         // line 154
+        yield from $this->unwrap()->yieldBlock('footer', $context, $blocks);
+        // line 157
         yield "        </footer>
 
         <!-- Bouton formulaire -->
@@ -141,12 +147,12 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
             <div class=\"modal-dialog\">
                 <div class=\"modal-content\">
                     <div class=\"modal-header\">
-                        <h5 class=\"modal-title\" id=\"contactFormModalLabel\">Contactez-moi</h5>
+                        <h5 class=\"modal-title\" id=\"contactFormModalLabel\">Rentrer vos coordonnées</h5>
                         <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
                     </div>
                     <div class=\"modal-body\">
                         <form action=\"";
-        // line 165
+        // line 168
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/CV.pdf"), "html", null, true);
         yield "\" method=\"get\">
                             <div class=\"mb-3\">
@@ -165,9 +171,9 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         </div>
         
         ";
-        // line 181
+        // line 184
         yield from $this->unwrap()->yieldBlock('javascripts', $context, $blocks);
-        // line 186
+        // line 189
         yield "    </body>
 </html>";
         
@@ -295,7 +301,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 111
+    // line 114
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -318,7 +324,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 115
+    // line 118
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -331,11 +337,11 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
-        // line 116
+        // line 119
         yield "                <div class=\"img-text-container\" id=\"img1\">
                     <figure>
                         <img src=\"";
-        // line 118
+        // line 121
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/maison.jpg"), "html", null, true);
         yield "\" alt=\"Maison en SuperAdobe\">
                         <figcaption>Ma maison en SuperAdobe</figcaption>
@@ -346,7 +352,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                 <div class=\"img-text-container\" id=\"img2\">
                     <figure>
                         <img src=\"";
-        // line 126
+        // line 129
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/maison.jpg"), "html", null, true);
         yield "\" alt=\"Maison en SuperAdobe\">
                         <figcaption>Ma maison en SuperAdobe</figcaption>
@@ -357,7 +363,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                 <div class=\"img-text-container\" id=\"img3\">
                     <figure>
                         <img src=\"";
-        // line 134
+        // line 137
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/maison.jpg"), "html", null, true);
         yield "\" alt=\"Maison en SuperAdobe\">
                         <figcaption>Ma maison en SuperAdobe</figcaption>
@@ -368,7 +374,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                 <div class=\"img-text-container\" id=\"img4\">
                     <figure>
                         <img src=\"";
-        // line 142
+        // line 145
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/maison.jpg"), "html", null, true);
         yield "\" alt=\"Maison en SuperAdobe\">
                         <figcaption>Ma maison en SuperAdobe</figcaption>
@@ -385,7 +391,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 151
+    // line 154
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -398,7 +404,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 152
+        // line 155
         yield "            <p>Acia Chouchane - Tous droits réservés<br>CC BY-NC-ND</p>
             ";
         
@@ -410,7 +416,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 181
+    // line 184
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -423,10 +429,10 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 182
+        // line 185
         yield "        ";
         yield from $this->unwrap()->yieldBlock('importmap', $context, $blocks);
-        // line 183
+        // line 186
         yield "            <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js\"></script>
             <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js\"></script>
         ";
@@ -439,7 +445,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
         yield from [];
     }
 
-    // line 182
+    // line 185
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -483,7 +489,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  443 => 182,  430 => 183,  427 => 182,  414 => 181,  402 => 152,  389 => 151,  372 => 142,  361 => 134,  350 => 126,  339 => 118,  335 => 116,  322 => 115,  299 => 111,  219 => 9,  206 => 8,  183 => 5,  171 => 186,  169 => 181,  150 => 165,  137 => 154,  135 => 151,  130 => 148,  128 => 115,  121 => 111,  110 => 103,  104 => 100,  98 => 97,  92 => 94,  86 => 91,  72 => 79,  70 => 8,  65 => 6,  61 => 5,  55 => 1,);
+        return array (  449 => 185,  436 => 186,  433 => 185,  420 => 184,  408 => 155,  395 => 154,  378 => 145,  367 => 137,  356 => 129,  345 => 121,  341 => 119,  328 => 118,  305 => 114,  225 => 9,  212 => 8,  189 => 5,  177 => 189,  175 => 184,  156 => 168,  143 => 157,  141 => 154,  136 => 151,  134 => 118,  127 => 114,  116 => 106,  110 => 103,  104 => 100,  98 => 97,  92 => 94,  86 => 91,  72 => 79,  70 => 8,  65 => 6,  61 => 5,  55 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -587,10 +593,13 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
                             <a class=\"nav-link\" href=\"{{ path('app_cv') }}\">CV</a>
                         </li>
                         <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"{{ path('app_portfolio_1') }}\">Point fort</a>
+                            <a class=\"nav-link\" href=\"{{ path('app_portfolio_1') }}\">Administrer</a>
                         </li>
                         <li class=\"nav-item\">
-                            <a class=\"nav-link\" href=\"{{ path('app_portfolio_2') }}\">Point faible</a>
+                            <a class=\"nav-link\" href=\"{{ path('app_portfolio_2') }}\">Connecter</a>
+                        </li>
+                        <li class=\"nav-item\">
+                            <a class=\"nav-link\" href=\"{{ path('app_portfolio_3') }}\">Programmer</a>
                         </li>
                     </ul>
                 </div>
@@ -648,7 +657,7 @@ class __TwigTemplate_fb8e4008109a4336f40ad21b181f7ae6 extends Template
             <div class=\"modal-dialog\">
                 <div class=\"modal-content\">
                     <div class=\"modal-header\">
-                        <h5 class=\"modal-title\" id=\"contactFormModalLabel\">Contactez-moi</h5>
+                        <h5 class=\"modal-title\" id=\"contactFormModalLabel\">Rentrer vos coordonnées</h5>
                         <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
                     </div>
                     <div class=\"modal-body\">

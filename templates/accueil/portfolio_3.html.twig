@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block page_title %}RT3 - Créer des outils et applications informatiques pour les R&T{% endblock %}
+
+{% block content %}
+    <div class="img-text-container" id="img1">
+        <figure style="width:50%;">
+            <img src="{{ asset('img/VA_blog.png') }}" alt="Blog de la ressource R1.09" style="width:60%; height:auto; display: block; margin: 0 auto;">
+            <figcaption>Blog de la ressource R1.09</figcaption>
+        </figure>
+        <p>
+            <b>• AC13.02 :</b> Lire, exécuter, corriger et modifier un programme<br>
+            <a href="https://docs.google.com/document/u/0/d/15WrXsQLB4R1tTitfmMpd5MTwT9qZjtNH2iBufextqtg/edit" target="_blank" class="btn btn-info">Preuve AC13.02</a>
+            <a href="https://docs.google.com/document/u/0/d/1QAayoYewBrEr53cqyalPYlFezgGBwczPNNI5iPLai5I/edit" target="_blank" class="btn btn-info">Écrit réflexif AC13.02</a>
+            <br><br>
+            <b>• AC13.04 :</b> Connaître l’architecture et les technologies d’un site Web<br>
+            <a href="https://docs.google.com/document/u/0/d/16EbDz9debk2P8CLjZ6CSPcgAOpuYBx8pKPSyjoUyokE/edit" target="_blank" class="btn btn-info">Preuve AC13.04</a>
+            <a href="https://docs.google.com/document/u/0/d/1svW-Wm0kHrqyjzBspq_SSD1Jx-1pSDPEpWl9LvX5mE4/edit" target="_blank" class="btn btn-info">Écrit réflexif AC13.04</a>
+        </p>
+    </div>
+    
+{% endblock %}
+
+{% block footer %}
+    <p>Acia Chouchane - Tous droits réservés<br>
+        CC BY-NC-ND</p>
+{% endblock %}

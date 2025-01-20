@@ -98,7 +98,7 @@ class __TwigTemplate_2caa61230f9ac1775d8875420cb667d5 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
-        yield "Points faibles";
+        yield "RT2 - Connecter les entreprises et les usagers";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -122,27 +122,23 @@ class __TwigTemplate_2caa61230f9ac1775d8875420cb667d5 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
         // line 8
-        yield "    <!-- Points faibles -->
-    <div class=\"img-text-container\" id=\"img1\">
+        yield "    <div class=\"img-text-container\" id=\"img1\">
         <figure style=\"width:50%;\">
             <img src=\"";
-        // line 11
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Vlan.png"), "html", null, true);
-        yield "\" alt=\"Réseaux de la ressource R1.03\" style=\"width:80%; height:auto; display: block; margin: 0 auto;\">
-            <figcaption>Réseaux de la ressource R1.03</figcaption>
+        // line 10
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/R113.png"), "html", null, true);
+        yield "\" alt=\"Analyse signaux de la ressource R113\" style=\"width:60%; height:auto; display: block; margin: 0 auto;\">
+            <figcaption>Analyse signaux de la ressource R1.13</figcaption>
         </figure>
         <p>
-            <b>RT1 - Administrer les réseaux et l'Internet</b><br>
-            <b>• </b>Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications.<br>
-            <b>• </b>Comprendre l’architecture et les fondements des systèmes numériques, les principes du codage de l’information, des communications et de l’Internet<br>
-            <b>• </b>Configurer les fonctions de base du réseau local<br>
-            <b>• </b>Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation afin d'interagir avec ceux-ci pour la configuration et l'administration des réseaux et services fournis   <br>
-            <b>• </b>Savoir identifier les dysfonctionnements du réseau local   <br>
-            <b>• </b> Installer un poste client expliquer la procédure mise en place   <br>
-            <br>
-            <b>RT 2 - Connecter les entreprises et les usagers</b><br>
-            <b>• </b>Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement<br>
-            <b>• </b> Déployer des supports de transmission<br>
+            <b>• AC12.01 :</b> Mesurer et analyser les signaux<br>
+            <a href=\"https://docs.google.com/document/u/0/d/10qg9N-pXgZA6ngpbWBh6osQfhMDxuhusSVSPJpF6uhs/edit\" target=\"_blank\" class=\"btn btn-info\">Preuve AC12.01</a>
+            <a href=\"https://docs.google.com/document/u/0/d/1iq9FVvwBq291zwAuN2beR0XuWZtLKazZtceiopDknyo/edit\" target=\"_blank\" class=\"btn btn-info\">Écrit réflexif AC12.01</a>
+            <br><br>
+            <b>• AC12.05 :</b>Communiquer avec un tiers (client, collaborateur...)
+            et adapter son discours et sa langue à son interlocuteur<br>
+            <a href=\"https://docs.google.com/document/u/0/d/1VVgRM7ZcpIRRq1XKCWTmT4QpKoMydHzq4UW_07LYkOI/edit\" target=\"_blank\" class=\"btn btn-info\">Preuve AC12.05</a>
+            <a href=\"https://docs.google.com/document/u/0/d/17YDPEoQkN9918031VuiK4s4Fe6H67MjTs5tM875yYew/edit\" target=\"_blank\" class=\"btn btn-info\">Écrit réflexif AC12.05</a>
         </p>
     </div>
     
@@ -156,7 +152,7 @@ class __TwigTemplate_2caa61230f9ac1775d8875420cb667d5 extends Template
         yield from [];
     }
 
-    // line 31
+    // line 27
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -169,7 +165,7 @@ class __TwigTemplate_2caa61230f9ac1775d8875420cb667d5 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 32
+        // line 28
         yield "    <p>Acia Chouchane - Tous droits réservés<br>
         CC BY-NC-ND</p>
 ";
@@ -203,7 +199,7 @@ class __TwigTemplate_2caa61230f9ac1775d8875420cb667d5 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  173 => 32,  160 => 31,  130 => 11,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
+        return array (  169 => 28,  156 => 27,  129 => 10,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -212,27 +208,23 @@ class __TwigTemplate_2caa61230f9ac1775d8875420cb667d5 extends Template
 
 {% block title %}Portfolio{% endblock %}
 
-{% block page_title %}Points faibles{% endblock %}
+{% block page_title %}RT2 - Connecter les entreprises et les usagers{% endblock %}
 
 {% block content %}
-    <!-- Points faibles -->
     <div class=\"img-text-container\" id=\"img1\">
         <figure style=\"width:50%;\">
-            <img src=\"{{ asset('img/Vlan.png') }}\" alt=\"Réseaux de la ressource R1.03\" style=\"width:80%; height:auto; display: block; margin: 0 auto;\">
-            <figcaption>Réseaux de la ressource R1.03</figcaption>
+            <img src=\"{{ asset('img/R113.png') }}\" alt=\"Analyse signaux de la ressource R113\" style=\"width:60%; height:auto; display: block; margin: 0 auto;\">
+            <figcaption>Analyse signaux de la ressource R1.13</figcaption>
         </figure>
         <p>
-            <b>RT1 - Administrer les réseaux et l'Internet</b><br>
-            <b>• </b>Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements de réseaux et télécommunications.<br>
-            <b>• </b>Comprendre l’architecture et les fondements des systèmes numériques, les principes du codage de l’information, des communications et de l’Internet<br>
-            <b>• </b>Configurer les fonctions de base du réseau local<br>
-            <b>• </b>Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation afin d'interagir avec ceux-ci pour la configuration et l'administration des réseaux et services fournis   <br>
-            <b>• </b>Savoir identifier les dysfonctionnements du réseau local   <br>
-            <b>• </b> Installer un poste client expliquer la procédure mise en place   <br>
-            <br>
-            <b>RT 2 - Connecter les entreprises et les usagers</b><br>
-            <b>• </b>Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement<br>
-            <b>• </b> Déployer des supports de transmission<br>
+            <b>• AC12.01 :</b> Mesurer et analyser les signaux<br>
+            <a href=\"https://docs.google.com/document/u/0/d/10qg9N-pXgZA6ngpbWBh6osQfhMDxuhusSVSPJpF6uhs/edit\" target=\"_blank\" class=\"btn btn-info\">Preuve AC12.01</a>
+            <a href=\"https://docs.google.com/document/u/0/d/1iq9FVvwBq291zwAuN2beR0XuWZtLKazZtceiopDknyo/edit\" target=\"_blank\" class=\"btn btn-info\">Écrit réflexif AC12.01</a>
+            <br><br>
+            <b>• AC12.05 :</b>Communiquer avec un tiers (client, collaborateur...)
+            et adapter son discours et sa langue à son interlocuteur<br>
+            <a href=\"https://docs.google.com/document/u/0/d/1VVgRM7ZcpIRRq1XKCWTmT4QpKoMydHzq4UW_07LYkOI/edit\" target=\"_blank\" class=\"btn btn-info\">Preuve AC12.05</a>
+            <a href=\"https://docs.google.com/document/u/0/d/17YDPEoQkN9918031VuiK4s4Fe6H67MjTs5tM875yYew/edit\" target=\"_blank\" class=\"btn btn-info\">Écrit réflexif AC12.05</a>
         </p>
     </div>
     

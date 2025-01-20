@@ -23,6 +23,7 @@ return [
     'app_cv' => [[], ['_controller' => 'App\\Controller\\AccueilController::cv'], [], [['text', '/cv']], [], [], []],
     'app_portfolio_1' => [[], ['_controller' => 'App\\Controller\\AccueilController::portfolio_1'], [], [['text', '/portfolio_1']], [], [], []],
     'app_portfolio_2' => [[], ['_controller' => 'App\\Controller\\AccueilController::portfolio_2'], [], [['text', '/portfolio_2']], [], [], []],
+    'app_portfolio_3' => [[], ['_controller' => 'App\\Controller\\AccueilController::portfolio_3'], [], [['text', '/portfolio_3']], [], [], []],
     'app_test' => [[], ['_controller' => 'App\\Controller\\AccueilController::test'], [], [['text', '/test']], [], [], []],
     'generate_cv_pdf' => [[], ['_controller' => 'App\\Controller\\AccueilController::generateCvPdf'], [], [['text', '/generate-cv-pdf']], [], [], []],
     'App\Controller\AccueilController::accueil' => [[], ['_controller' => 'App\\Controller\\AccueilController::accueil'], [], [['text', '/accueil']], [], [], []],
@@ -30,6 +31,7 @@ return [
     'App\Controller\AccueilController::cv' => [[], ['_controller' => 'App\\Controller\\AccueilController::cv'], [], [['text', '/cv']], [], [], []],
     'App\Controller\AccueilController::portfolio_1' => [[], ['_controller' => 'App\\Controller\\AccueilController::portfolio_1'], [], [['text', '/portfolio_1']], [], [], []],
     'App\Controller\AccueilController::portfolio_2' => [[], ['_controller' => 'App\\Controller\\AccueilController::portfolio_2'], [], [['text', '/portfolio_2']], [], [], []],
+    'App\Controller\AccueilController::portfolio_3' => [[], ['_controller' => 'App\\Controller\\AccueilController::portfolio_3'], [], [['text', '/portfolio_3']], [], [], []],
     'App\Controller\AccueilController::test' => [[], ['_controller' => 'App\\Controller\\AccueilController::test'], [], [['text', '/test']], [], [], []],
     'App\Controller\AccueilController::generateCvPdf' => [[], ['_controller' => 'App\\Controller\\AccueilController::generateCvPdf'], [], [['text', '/generate-cv-pdf']], [], [], []],
 ];

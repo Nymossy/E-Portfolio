@@ -98,7 +98,7 @@ class __TwigTemplate_96c43a332644ca6bddb18e480b3e3105 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "page_title"));
 
-        yield "Points forts";
+        yield "RT1 - Administrer les réseaux et l'Internet";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -122,27 +122,25 @@ class __TwigTemplate_96c43a332644ca6bddb18e480b3e3105 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "content"));
 
         // line 8
-        yield "    <!-- Points forts -->
-    <div class=\"img-text-container\" id=\"img1\">
+        yield "    <div class=\"img-text-container\" id=\"img1\">
         <figure style=\"width:50%;\">
             <img src=\"";
-        // line 11
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/VA_blog.png"), "html", null, true);
-        yield "\" alt=\"Blog de la ressource R1.09\" style=\"width:70%; height:auto; display: block; margin: 0 auto;\">
-            <figcaption>Blog de la ressource R1.09</figcaption>
+        // line 10
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/Vlan.png"), "html", null, true);
+        yield "\" alt=\"Réseaux de la ressource R1.03\" style=\"width:80%; height:auto; display: block; margin: 0 auto;\">
+            <figcaption>Réseaux de la ressource R1.03</figcaption>
         </figure>
         <p>
-            <b>RT2 - Connecter les entreprises et les usagers</b><br>
-            <b>• </b>Mesurer et analyser les signaux.<br>
-            <b>• </b>Communiquer avec un tiers et adapter son discours et sa langue à son interlocuteur<br>
-            <br>
-            <b>RT 3 - Créer des outils et applications informatiques pour les R&T</b><br>
-            <b>• </b>Utiliser un système informatique et ses outils<br>
-            <b>• </b>Lire, exécuter, corriger et modifier un programme<br>
-            <b>• </b>Traduire un algorithme, dans un langage et pour un environnement donné<br>
-            <b>• </b>Connaître l’architecture et les technologies d’un site Web<br>
-            <b>• </b>Choisir les mécanismes de gestion de données adaptés au développement de l’outil et argumenter ses choix<br>
-            <b>• </b>S’intégrer dans un environnement propice au développement et au travail collaboratif<br>
+            <b>• AC11.01 :</b>Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements
+            de réseaux et télécommunications (habilitation électrique).<br>
+            <a href=\"https://docs.google.com/document/u/0/d/1bycLsaj9bG6t8btrhMSP3pwRBHINeaqntnTVEfqzkFc/edit\" target=\"_blank\" class=\"btn btn-info\">Preuve AC11.01</a>
+            <a href=\"https://docs.google.com/document/u/0/d/1kuNmuXn_tMxRmrNh6GoXqxmU0IH_4bmDviIOCkPmkOc/edit\" target=\"_blank\" class=\"btn btn-info\">Écrit réflexif AC11.01</a>
+            <br><br>
+            <b>• AC11.04 :</b>Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation
+            afin d'interagir avec ceux-ci pour la configuration et l'administration des réseaux et services fournis<br>
+            <a href=\"https://docs.google.com/document/u/0/d/1EMloBq_Hg1AkyEmlJ9-DjCIMKj3zw7ng_Z_8e0ZawwQ/edit\" target=\"_blank\" class=\"btn btn-info\">Preuve AC11.04</a>
+            <a href=\"https://docs.google.com/document/u/0/d/1UhZ9o22FksPJmtXdEH9D0mSf5GWay9vr-F4FRO_TvpM/edit\" target=\"_blank\" class=\"btn btn-info\">Écrit réflexif AC11.04</a>
+        </p>
         </p>
     </div>
     
@@ -156,7 +154,7 @@ class __TwigTemplate_96c43a332644ca6bddb18e480b3e3105 extends Template
         yield from [];
     }
 
-    // line 31
+    // line 29
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -169,7 +167,7 @@ class __TwigTemplate_96c43a332644ca6bddb18e480b3e3105 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 32
+        // line 30
         yield "    <p>Acia Chouchane - Tous droits réservés<br>
         CC BY-NC-ND</p>
 ";
@@ -203,7 +201,7 @@ class __TwigTemplate_96c43a332644ca6bddb18e480b3e3105 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  173 => 32,  160 => 31,  130 => 11,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
+        return array (  171 => 30,  158 => 29,  129 => 10,  125 => 8,  112 => 7,  89 => 5,  66 => 3,  43 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -212,27 +210,25 @@ class __TwigTemplate_96c43a332644ca6bddb18e480b3e3105 extends Template
 
 {% block title %}Portfolio{% endblock %}
 
-{% block page_title %}Points forts{% endblock %}
+{% block page_title %}RT1 - Administrer les réseaux et l'Internet{% endblock %}
 
 {% block content %}
-    <!-- Points forts -->
     <div class=\"img-text-container\" id=\"img1\">
         <figure style=\"width:50%;\">
-            <img src=\"{{ asset('img/VA_blog.png') }}\" alt=\"Blog de la ressource R1.09\" style=\"width:70%; height:auto; display: block; margin: 0 auto;\">
-            <figcaption>Blog de la ressource R1.09</figcaption>
+            <img src=\"{{ asset('img/Vlan.png') }}\" alt=\"Réseaux de la ressource R1.03\" style=\"width:80%; height:auto; display: block; margin: 0 auto;\">
+            <figcaption>Réseaux de la ressource R1.03</figcaption>
         </figure>
         <p>
-            <b>RT2 - Connecter les entreprises et les usagers</b><br>
-            <b>• </b>Mesurer et analyser les signaux.<br>
-            <b>• </b>Communiquer avec un tiers et adapter son discours et sa langue à son interlocuteur<br>
-            <br>
-            <b>RT 3 - Créer des outils et applications informatiques pour les R&T</b><br>
-            <b>• </b>Utiliser un système informatique et ses outils<br>
-            <b>• </b>Lire, exécuter, corriger et modifier un programme<br>
-            <b>• </b>Traduire un algorithme, dans un langage et pour un environnement donné<br>
-            <b>• </b>Connaître l’architecture et les technologies d’un site Web<br>
-            <b>• </b>Choisir les mécanismes de gestion de données adaptés au développement de l’outil et argumenter ses choix<br>
-            <b>• </b>S’intégrer dans un environnement propice au développement et au travail collaboratif<br>
+            <b>• AC11.01 :</b>Maîtriser les lois fondamentales de l’électricité afin d’intervenir sur des équipements
+            de réseaux et télécommunications (habilitation électrique).<br>
+            <a href=\"https://docs.google.com/document/u/0/d/1bycLsaj9bG6t8btrhMSP3pwRBHINeaqntnTVEfqzkFc/edit\" target=\"_blank\" class=\"btn btn-info\">Preuve AC11.01</a>
+            <a href=\"https://docs.google.com/document/u/0/d/1kuNmuXn_tMxRmrNh6GoXqxmU0IH_4bmDviIOCkPmkOc/edit\" target=\"_blank\" class=\"btn btn-info\">Écrit réflexif AC11.01</a>
+            <br><br>
+            <b>• AC11.04 :</b>Maîtriser les rôles et les principes fondamentaux des systèmes d'exploitation
+            afin d'interagir avec ceux-ci pour la configuration et l'administration des réseaux et services fournis<br>
+            <a href=\"https://docs.google.com/document/u/0/d/1EMloBq_Hg1AkyEmlJ9-DjCIMKj3zw7ng_Z_8e0ZawwQ/edit\" target=\"_blank\" class=\"btn btn-info\">Preuve AC11.04</a>
+            <a href=\"https://docs.google.com/document/u/0/d/1UhZ9o22FksPJmtXdEH9D0mSf5GWay9vr-F4FRO_TvpM/edit\" target=\"_blank\" class=\"btn btn-info\">Écrit réflexif AC11.04</a>
+        </p>
         </p>
     </div>
     

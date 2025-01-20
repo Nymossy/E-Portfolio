@@ -51,6 +51,14 @@ class AccueilController extends AbstractController
         ]);
     }
 
+    #[Route('/portfolio_3', name: 'app_portfolio_3')]
+    public function portfolio_3(): Response
+    {
+        return $this->render('accueil/portfolio_3.html.twig', [
+            'controller_name' => 'AccueilController',
+        ]);
+    }
+
     #[Route('/test', name: 'app_test')]
     public function test(): Response
     {
