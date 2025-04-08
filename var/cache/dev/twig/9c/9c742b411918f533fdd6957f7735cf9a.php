@@ -122,26 +122,107 @@ class __TwigTemplate_680c4b8ba56772437cf0ebb20e312485 extends Template
 
         // line 8
         yield "    <div class=\"container d-flex align-items-center\" style=\"min-height: 100vh;\">
-        <div class=\"row w-100\">
-            <div class=\"col-md-6 d-flex align-items-center justify-content-center\">
+        <div class=\"row w-100 align-items-center\">
+            <div class=\"col-md-5 d-flex justify-content-center\">
                 <figure>
                     <img src=\"";
         // line 12
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/cybersecurity.jpg"), "html", null, true);
-        yield "\" alt=\"Réseaux de la ressource R1.03\" class=\"img-fluid\">
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/cybersecurity2.jpg"), "html", null, true);
+        yield "\" alt=\"Cybersécurité illustration\" class=\"img-fluid\">
                     <figcaption>Illustration de cybersécurité</figcaption>
                 </figure>
             </div>
-            <div class=\"col-md-6\">
+            <div class=\"col-md-7 pe-0 d-flex align-items-center\">
                 <p>
-                    texte ...
-                    Négatif : ...
-                    Positif : ...
+                    Les Apprentissages Critiques importants pour le parcours Cybersécurité sont :
                     <br><br>
-
+                    <b>• AC11.03 :</b> Configurer les fonctions de base du réseau local<br>
+                    <b>• AC11.05 :</b> Savoir identifier les dysfonctionnements du réseau local<br>
+                    <b>• AC11.06 :</b> Installer un poste client expliquer la procédure mise en place (et le sécuriser : antivirus, pare-feu, comptes, …)<br>
+                    <br>
+                    <b>• AC13.01 :</b> Utiliser un système informatique et ses outils (intro système, fichiers, CLI, zips, outils collaboratifs sur Internet, hygiène informatique, …)<br>
                     <b>• AC13.02 :</b> Lire, exécuter, corriger et modifier un programme<br>
+                    <b>• AC13.03 :</b> Traduire un algorithme, dans un langage et pour un environnement donné<br>
+                    <b>• AC13.04 :</b> Connaître l'architecture et les technologies d'un site Web (Langages et outils : HTML, CSS, CMS, JS, responsive)<br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class=\"container d-flex align-items-center\" style=\"min-height: 100vh;\">
+        <div class=\"row w-100 align-items-center\">
+            <div class=\"col-md-5 d-flex justify-content-center\">
+                <figure>
+                    <img src=\"";
+        // line 37
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/amelioration.jpg"), "html", null, true);
+        yield "\" alt=\"Améliorations\" class=\"img-fluid\">
+                    <figcaption>Illustration d'améliorations</figcaption>
+                </figure>
+            </div>
+            <div class=\"col-md-7 pe-0 d-flex align-items-center\">
+                <p>
+                    Les Apprentissages Critiques compliqués :
+                    <br><br>
+                    <b>• AC11.03 & AC11.05 :</b><br>
+                    Mise en place d'une nouvelle façon de travailler,<br>
+                    Plus de travail à la maison,<br>
+                    Création de fiche aide,<br>
+                    Meilleure compréhension de l'utilité des ressources,<br>
+                    Prise en main de l'utilisation des matériels / logiciels<br>
+                    <br>
+                    <b>• AC13.03 :</b><br>
+                    Reprise des TD & TP à la maison<br>
+                    Finalisation des comptes rendus à la maison<br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class=\"container d-flex align-items-center\" style=\"min-height: 100vh;\">
+        <div class=\"row w-100 align-items-center\">
+            <div class=\"col-md-5 d-flex justify-content-center\">
+                <figure>
+                    <img src=\"";
+        // line 64
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/competences.jpeg"), "html", null, true);
+        yield "\" alt=\"Compétences\" class=\"img-fluid\">
+                    <figcaption>Illustration de compétences</figcaption>
+                </figure>
+            </div>
+            <div class=\"col-md-7 pe-0 d-flex align-items-center\">
+                <p>
+                    Les Apprentissages Critiques acquis :
+                    <br><br>
+                    <b>• AC11.06 :</b> Nouvelle méthode d'organisation.<br>
+                    <br>
+                    <b>• AC13.04 :</b> Réalisation plaisante car très visuel.<br>
+                    <b>• AC13.02 :</b> Consolidation de compétences déjà acquises.<br>
                     <a href=\"https://docs.google.com/document/u/0/d/15WrXsQLB4R1tTitfmMpd5MTwT9qZjtNH2iBufextqtg/edit\" target=\"_blank\" class=\"btn btn-info\">Preuve AC13.02</a>
                     <a href=\"https://docs.google.com/document/u/0/d/1QAayoYewBrEr53cqyalPYlFezgGBwczPNNI5iPLai5I/edit\" target=\"_blank\" class=\"btn btn-info\">Écrit réflexif AC13.02</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class=\"container d-flex align-items-center\" style=\"min-height: 100vh;\">
+        <div class=\"row w-100 align-items-center\">
+            <div class=\"col-md-5 d-flex justify-content-center\">
+                <figure>
+                    <img src=\"";
+        // line 87
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/MarsHack.jpg"), "html", null, true);
+        yield "\" alt=\"Mars@Hack\" class=\"img-fluid\" style=\"width: 85%;\">
+                    <figcaption>Affiche Mars@Hack 2025</figcaption>
+                </figure>
+            </div>
+            <div class=\"col-md-7 pe-0 d-flex align-items-center\">
+                <p>
+                    Après ma participation au CTF Mars@Hack, la semaine dernière, j'ai pu mettre en pratique ce que j'avais appris, que ce soit lors des cours ou en autodidacte.
+                    Je me suis beaucoup amusée lors de cet évènement même si certains défis m'ont bien cassé la tête.
+                    Ce qui m'a fait réfléchir et m'a permis de confirmer que c'est bien le domaine qui me plaît et que j'ai envie d'approfondir dans la voie professionnelle.<br>
+                    <br>
+                    C'est pourquoi je voudrais poursuivre mon BUT R&T avec le parcours Cybersécurité afin de concrétiser mon rêve et de pouvoir m'épanouir dans un domaine que j'apprécie énormément.
                 </p>
             </div>
         </div>
@@ -177,7 +258,7 @@ class __TwigTemplate_680c4b8ba56772437cf0ebb20e312485 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  130 => 12,  124 => 8,  111 => 7,  88 => 5,  65 => 3,  42 => 1,);
+        return array (  214 => 87,  188 => 64,  158 => 37,  130 => 12,  124 => 8,  111 => 7,  88 => 5,  65 => 3,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -190,23 +271,95 @@ class __TwigTemplate_680c4b8ba56772437cf0ebb20e312485 extends Template
 
 {% block content %}
     <div class=\"container d-flex align-items-center\" style=\"min-height: 100vh;\">
-        <div class=\"row w-100\">
-            <div class=\"col-md-6 d-flex align-items-center justify-content-center\">
+        <div class=\"row w-100 align-items-center\">
+            <div class=\"col-md-5 d-flex justify-content-center\">
                 <figure>
-                    <img src=\"{{ asset('img/cybersecurity.jpg') }}\" alt=\"Réseaux de la ressource R1.03\" class=\"img-fluid\">
+                    <img src=\"{{ asset('img/cybersecurity2.jpg') }}\" alt=\"Cybersécurité illustration\" class=\"img-fluid\">
                     <figcaption>Illustration de cybersécurité</figcaption>
                 </figure>
             </div>
-            <div class=\"col-md-6\">
+            <div class=\"col-md-7 pe-0 d-flex align-items-center\">
                 <p>
-                    texte ...
-                    Négatif : ...
-                    Positif : ...
+                    Les Apprentissages Critiques importants pour le parcours Cybersécurité sont :
                     <br><br>
-
+                    <b>• AC11.03 :</b> Configurer les fonctions de base du réseau local<br>
+                    <b>• AC11.05 :</b> Savoir identifier les dysfonctionnements du réseau local<br>
+                    <b>• AC11.06 :</b> Installer un poste client expliquer la procédure mise en place (et le sécuriser : antivirus, pare-feu, comptes, …)<br>
+                    <br>
+                    <b>• AC13.01 :</b> Utiliser un système informatique et ses outils (intro système, fichiers, CLI, zips, outils collaboratifs sur Internet, hygiène informatique, …)<br>
                     <b>• AC13.02 :</b> Lire, exécuter, corriger et modifier un programme<br>
+                    <b>• AC13.03 :</b> Traduire un algorithme, dans un langage et pour un environnement donné<br>
+                    <b>• AC13.04 :</b> Connaître l'architecture et les technologies d'un site Web (Langages et outils : HTML, CSS, CMS, JS, responsive)<br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class=\"container d-flex align-items-center\" style=\"min-height: 100vh;\">
+        <div class=\"row w-100 align-items-center\">
+            <div class=\"col-md-5 d-flex justify-content-center\">
+                <figure>
+                    <img src=\"{{ asset('img/amelioration.jpg') }}\" alt=\"Améliorations\" class=\"img-fluid\">
+                    <figcaption>Illustration d'améliorations</figcaption>
+                </figure>
+            </div>
+            <div class=\"col-md-7 pe-0 d-flex align-items-center\">
+                <p>
+                    Les Apprentissages Critiques compliqués :
+                    <br><br>
+                    <b>• AC11.03 & AC11.05 :</b><br>
+                    Mise en place d'une nouvelle façon de travailler,<br>
+                    Plus de travail à la maison,<br>
+                    Création de fiche aide,<br>
+                    Meilleure compréhension de l'utilité des ressources,<br>
+                    Prise en main de l'utilisation des matériels / logiciels<br>
+                    <br>
+                    <b>• AC13.03 :</b><br>
+                    Reprise des TD & TP à la maison<br>
+                    Finalisation des comptes rendus à la maison<br>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class=\"container d-flex align-items-center\" style=\"min-height: 100vh;\">
+        <div class=\"row w-100 align-items-center\">
+            <div class=\"col-md-5 d-flex justify-content-center\">
+                <figure>
+                    <img src=\"{{ asset('img/competences.jpeg') }}\" alt=\"Compétences\" class=\"img-fluid\">
+                    <figcaption>Illustration de compétences</figcaption>
+                </figure>
+            </div>
+            <div class=\"col-md-7 pe-0 d-flex align-items-center\">
+                <p>
+                    Les Apprentissages Critiques acquis :
+                    <br><br>
+                    <b>• AC11.06 :</b> Nouvelle méthode d'organisation.<br>
+                    <br>
+                    <b>• AC13.04 :</b> Réalisation plaisante car très visuel.<br>
+                    <b>• AC13.02 :</b> Consolidation de compétences déjà acquises.<br>
                     <a href=\"https://docs.google.com/document/u/0/d/15WrXsQLB4R1tTitfmMpd5MTwT9qZjtNH2iBufextqtg/edit\" target=\"_blank\" class=\"btn btn-info\">Preuve AC13.02</a>
                     <a href=\"https://docs.google.com/document/u/0/d/1QAayoYewBrEr53cqyalPYlFezgGBwczPNNI5iPLai5I/edit\" target=\"_blank\" class=\"btn btn-info\">Écrit réflexif AC13.02</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class=\"container d-flex align-items-center\" style=\"min-height: 100vh;\">
+        <div class=\"row w-100 align-items-center\">
+            <div class=\"col-md-5 d-flex justify-content-center\">
+                <figure>
+                    <img src=\"{{ asset('img/MarsHack.jpg') }}\" alt=\"Mars@Hack\" class=\"img-fluid\" style=\"width: 85%;\">
+                    <figcaption>Affiche Mars@Hack 2025</figcaption>
+                </figure>
+            </div>
+            <div class=\"col-md-7 pe-0 d-flex align-items-center\">
+                <p>
+                    Après ma participation au CTF Mars@Hack, la semaine dernière, j'ai pu mettre en pratique ce que j'avais appris, que ce soit lors des cours ou en autodidacte.
+                    Je me suis beaucoup amusée lors de cet évènement même si certains défis m'ont bien cassé la tête.
+                    Ce qui m'a fait réfléchir et m'a permis de confirmer que c'est bien le domaine qui me plaît et que j'ai envie d'approfondir dans la voie professionnelle.<br>
+                    <br>
+                    C'est pourquoi je voudrais poursuivre mon BUT R&T avec le parcours Cybersécurité afin de concrétiser mon rêve et de pouvoir m'épanouir dans un domaine que j'apprécie énormément.
                 </p>
             </div>
         </div>
