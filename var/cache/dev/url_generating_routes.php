@@ -24,6 +24,7 @@ return [
     'app_portfolio_1' => [[], ['_controller' => 'App\\Controller\\AccueilController::portfolio_1'], [], [['text', '/portfolio_1']], [], [], []],
     'app_portfolio_2' => [[], ['_controller' => 'App\\Controller\\AccueilController::portfolio_2'], [], [['text', '/portfolio_2']], [], [], []],
     'app_portfolio_3' => [[], ['_controller' => 'App\\Controller\\AccueilController::portfolio_3'], [], [['text', '/portfolio_3']], [], [], []],
+    'app_cyber' => [[], ['_controller' => 'App\\Controller\\AccueilController::cyber'], [], [['text', '/cyber']], [], [], []],
     'generate_cv_pdf' => [[], ['_controller' => 'App\\Controller\\AccueilController::generateCvPdf'], [], [['text', '/generate-cv-pdf']], [], [], []],
     'App\Controller\AccueilController::accueil' => [[], ['_controller' => 'App\\Controller\\AccueilController::accueil'], [], [['text', '/accueil']], [], [], []],
     'App\Controller\AccueilController::about' => [[], ['_controller' => 'App\\Controller\\AccueilController::about'], [], [['text', '/about']], [], [], []],
@@ -31,5 +32,6 @@ return [
     'App\Controller\AccueilController::portfolio_1' => [[], ['_controller' => 'App\\Controller\\AccueilController::portfolio_1'], [], [['text', '/portfolio_1']], [], [], []],
     'App\Controller\AccueilController::portfolio_2' => [[], ['_controller' => 'App\\Controller\\AccueilController::portfolio_2'], [], [['text', '/portfolio_2']], [], [], []],
     'App\Controller\AccueilController::portfolio_3' => [[], ['_controller' => 'App\\Controller\\AccueilController::portfolio_3'], [], [['text', '/portfolio_3']], [], [], []],
+    'App\Controller\AccueilController::cyber' => [[], ['_controller' => 'App\\Controller\\AccueilController::cyber'], [], [['text', '/cyber']], [], [], []],
     'App\Controller\AccueilController::generateCvPdf' => [[], ['_controller' => 'App\\Controller\\AccueilController::generateCvPdf'], [], [['text', '/generate-cv-pdf']], [], [], []],
 ];

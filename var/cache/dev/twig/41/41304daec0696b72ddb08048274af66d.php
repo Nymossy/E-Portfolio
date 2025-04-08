@@ -148,6 +148,27 @@ class __TwigTemplate_3dd7064fb88399899148c4cdcdd92a4e extends Template
         </section>
         <br>
         <section id=\"img3\">
+            <h2>Choix du parcours</h2>
+            <p>
+                Pour ma seconde année, j'aimerais suivre le parcours Cybersécurité.<br>
+                C'est la principale raison pour laquelle j'ai choisi de suivre la formation du BUT RT et de venir à Roanne,<br>
+                car cela fait plusieurs années que la Cybersécurité m'intéresse, m'intrigue et me passionne.<br><br>
+                Je veux pouvoir protéger au mieux ma vie numérique, c'est pourquoi ce domaine m'intéresse autant.<br>
+                J'ai commencé à diminuer mon empreinte sur Internet en utilisant des logiciels open-source<br>
+                et à sécuriser mes comptes avec des mots de passe forts, grâce à un gestionnaire de mot de passe.<br>
+                C'est aussi la raison pour laquelle j'ai rejoint Hackcess, afin de découvrir une nouvelle facette de la cybersécurité,<br>
+                avec un l'apprentissage non académique, en s'amusant sur Erreur502, et en se challengeant avec des CTF et autres concours de cyber.<br><br>
+                Je pense qu'en combinant plaisirs, apprentissages, challenges, intérêt et pratique,<br>
+                j'arriverais alors à mon but de savoir me protéger.<br>
+            </p>
+
+            <a href=\"";
+        // line 46
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_cyber");
+        yield "\" class=\"btn btn-primary\">Choix du parcours</a>
+        </section>
+        <br>
+        <section id=\"img4\">
             <h2>Contact</h2>
             <p>
                 Téléphone : +33 6 66 91 10 07  <br>
@@ -186,7 +207,7 @@ class __TwigTemplate_3dd7064fb88399899148c4cdcdd92a4e extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  146 => 28,  126 => 10,  113 => 9,  101 => 6,  88 => 5,  65 => 3,  42 => 1,);
+        return array (  167 => 46,  146 => 28,  126 => 10,  113 => 9,  101 => 6,  88 => 5,  65 => 3,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -222,6 +243,24 @@ class __TwigTemplate_3dd7064fb88399899148c4cdcdd92a4e extends Template
         </section>
         <br>
         <section id=\"img3\">
+            <h2>Choix du parcours</h2>
+            <p>
+                Pour ma seconde année, j'aimerais suivre le parcours Cybersécurité.<br>
+                C'est la principale raison pour laquelle j'ai choisi de suivre la formation du BUT RT et de venir à Roanne,<br>
+                car cela fait plusieurs années que la Cybersécurité m'intéresse, m'intrigue et me passionne.<br><br>
+                Je veux pouvoir protéger au mieux ma vie numérique, c'est pourquoi ce domaine m'intéresse autant.<br>
+                J'ai commencé à diminuer mon empreinte sur Internet en utilisant des logiciels open-source<br>
+                et à sécuriser mes comptes avec des mots de passe forts, grâce à un gestionnaire de mot de passe.<br>
+                C'est aussi la raison pour laquelle j'ai rejoint Hackcess, afin de découvrir une nouvelle facette de la cybersécurité,<br>
+                avec un l'apprentissage non académique, en s'amusant sur Erreur502, et en se challengeant avec des CTF et autres concours de cyber.<br><br>
+                Je pense qu'en combinant plaisirs, apprentissages, challenges, intérêt et pratique,<br>
+                j'arriverais alors à mon but de savoir me protéger.<br>
+            </p>
+
+            <a href=\"{{ path('app_cyber') }}\" class=\"btn btn-primary\">Choix du parcours</a>
+        </section>
+        <br>
+        <section id=\"img4\">
             <h2>Contact</h2>
             <p>
                 Téléphone : +33 6 66 91 10 07  <br>

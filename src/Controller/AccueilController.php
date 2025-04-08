@@ -58,6 +58,15 @@ class AccueilController extends AbstractController
             'controller_name' => 'AccueilController',
         ]);
     }
+
+    #[Route('/cyber', name: 'app_cyber')]
+    public function cyber(): Response
+    {
+        return $this->render('accueil/cyber.html.twig', [
+            'controller_name' => 'AccueilController',
+        ]);
+    }
+
     /* Nouvelle route pour accéder à la page test.html.twig :
     #[Route('/test', name: 'app_test')]
     public function test(): Response

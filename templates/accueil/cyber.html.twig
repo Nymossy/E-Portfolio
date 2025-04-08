@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Parcours{% endblock %}
+
+{% block page_title %}Choix de parcours : Cybersécurité{% endblock %}
+
+{% block content %}
+    <div class="container d-flex align-items-center" style="min-height: 100vh;">
+        <div class="row w-100">
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <figure>
+                    <img src="{{ asset('img/cybersecurity.jpg') }}" alt="Réseaux de la ressource R1.03" class="img-fluid">
+                    <figcaption>Illustration de cybersécurité</figcaption>
+                </figure>
+            </div>
+            <div class="col-md-6">
+                <p>
+                    texte ...
+                    Négatif : ...
+                    Positif : ...
+                    <br><br>
+
+                    <b>• AC13.02 :</b> Lire, exécuter, corriger et modifier un programme<br>
+                    <a href="https://docs.google.com/document/u/0/d/15WrXsQLB4R1tTitfmMpd5MTwT9qZjtNH2iBufextqtg/edit" target="_blank" class="btn btn-info">Preuve AC13.02</a>
+                    <a href="https://docs.google.com/document/u/0/d/1QAayoYewBrEr53cqyalPYlFezgGBwczPNNI5iPLai5I/edit" target="_blank" class="btn btn-info">Écrit réflexif AC13.02</a>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

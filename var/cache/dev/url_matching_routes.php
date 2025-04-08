@@ -21,6 +21,7 @@ return [
         '/portfolio_1' => [[['_route' => 'app_portfolio_1', '_controller' => 'App\\Controller\\AccueilController::portfolio_1'], null, null, null, false, false, null]],
         '/portfolio_2' => [[['_route' => 'app_portfolio_2', '_controller' => 'App\\Controller\\AccueilController::portfolio_2'], null, null, null, false, false, null]],
         '/portfolio_3' => [[['_route' => 'app_portfolio_3', '_controller' => 'App\\Controller\\AccueilController::portfolio_3'], null, null, null, false, false, null]],
+        '/cyber' => [[['_route' => 'app_cyber', '_controller' => 'App\\Controller\\AccueilController::cyber'], null, null, null, false, false, null]],
         '/generate-cv-pdf' => [[['_route' => 'generate_cv_pdf', '_controller' => 'App\\Controller\\AccueilController::generateCvPdf'], null, ['POST' => 0], null, false, false, null]],
     ],
     [ // $regexpList
