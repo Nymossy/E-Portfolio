@@ -196,6 +196,7 @@ class __TwigTemplate_680c4b8ba56772437cf0ebb20e312485 extends Template
                     <br><br>
                     <b>• AC11.06 :</b> Nouvelle méthode d'organisation.<br>
                     <br>
+                    <b>• AC13.01 :</b> Base de bonne pratique déjà acquises.<br>
                     <b>• AC13.02 :</b> Consolidation de compétences déjà acquises.<br>
                     <b>• AC13.04 :</b> Réalisation plaisante car très visuel.<br>
                 </p>
@@ -208,7 +209,7 @@ class __TwigTemplate_680c4b8ba56772437cf0ebb20e312485 extends Template
             <div class=\"col-md-5 d-flex justify-content-center\">
                 <figure>
                     <img src=\"";
-        // line 85
+        // line 86
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("img/MarsHack.jpg"), "html", null, true);
         yield "\" alt=\"Mars@Hack\" class=\"img-fluid\" style=\"width: 85%;\">
                     <figcaption>Affiche Mars@Hack 2025</figcaption>
@@ -256,7 +257,7 @@ class __TwigTemplate_680c4b8ba56772437cf0ebb20e312485 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  212 => 85,  188 => 64,  158 => 37,  130 => 12,  124 => 8,  111 => 7,  88 => 5,  65 => 3,  42 => 1,);
+        return array (  213 => 86,  188 => 64,  158 => 37,  130 => 12,  124 => 8,  111 => 7,  88 => 5,  65 => 3,  42 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -334,6 +335,7 @@ class __TwigTemplate_680c4b8ba56772437cf0ebb20e312485 extends Template
                     <br><br>
                     <b>• AC11.06 :</b> Nouvelle méthode d'organisation.<br>
                     <br>
+                    <b>• AC13.01 :</b> Base de bonne pratique déjà acquises.<br>
                     <b>• AC13.02 :</b> Consolidation de compétences déjà acquises.<br>
                     <b>• AC13.04 :</b> Réalisation plaisante car très visuel.<br>
                 </p>
